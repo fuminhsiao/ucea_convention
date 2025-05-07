@@ -5,12 +5,12 @@ const exampleItems = [
   {
     title: "SESSION TYPES",
     description: "Session types include paper sessions, practice-based presentations, ignite presentations, roundtables, community building sessions, terrace talks, workshop/ development sessions symposia, international community - building sessions, innovative sessions / mini - workshops, and pre - Convention work sessions and workshops.",
-    link: "session_types",
+    link: "/cfp/session_types",
   },
   {
     title: "SUBMISSION DETAILS",
     description: "For submission guidelines, participation limits, proposal reviewer information, and other details.",
-    link: "submission_details",
+    link: "/cfp/submission_details",
   },
 
 ];

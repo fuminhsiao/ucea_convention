@@ -1,7 +1,7 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
-import defaultBanner from "@/assets/Banner.png";
+import defaultBanner from "@/assets/Banner.jpg";
 
 interface PageHeaderProps {
   imageSrc?: StaticImageData | string;

@@ -33,7 +33,7 @@ export default function HeroSection() {
 
             {/* 巨大 2025（響應式文字大小，使用 absolute 疊在 Logo 背後） */}
             <h1 className="absolute top-0 left-0 text-[20vw] sm:text-[16vw] md:text-[12vw] lg:text-[10vw] font-extrabold text-[#3366cc]/40 tracking-tight -z-10 pointer-events-none">
-              2024
+              2025
             </h1>
           </div>
 

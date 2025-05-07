@@ -28,7 +28,7 @@ export default function LocationMapSection({
   mapZoom,
 }: LocationMapSectionProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-8">
+    <div className="flex flex-col md:flex-row gap-8 w-full">
       {/* 左側：地址與交通方式 */}
       <div className="md:w-1/2">
         <div className="text-2xl text-black mb-6 space-y-1">

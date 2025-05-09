@@ -5,13 +5,20 @@ const exampleItems = [
   {
     title: "SESSION TYPES",
     description: "Session types include paper sessions, practice-based presentations, ignite presentations, roundtables, community building sessions, terrace talks, workshop/ development sessions symposia, international community - building sessions, innovative sessions / mini - workshops, and pre - Convention work sessions and workshops.",
-    link: "/cfp/session_types",
+    link: "/cfp/session-types",
   },
   {
     title: "SUBMISSION DETAILS",
     description: "For submission guidelines, participation limits, proposal reviewer information, and other details.",
-    link: "/cfp/submission_details",
+    link: "/cfp/submission-details",
   },
+  {
+    title: "HOW TO SUBMIT A STRONG PROPOSAL",
+    description: "Tips for writing a compelling proposal, recommended structure for different proposal types, and sample submissions.",
+    link: "/cfp/strong-proposal",
+  },
+
+
 
 ];
 export const CFP_2025: CFPData = {
@@ -70,7 +77,7 @@ export const CFP_2025: CFPData = {
         </>
       ),
     },
-   
+
     {
       title: "2025 CONVENTION THEME",
       bg: "bg-white",

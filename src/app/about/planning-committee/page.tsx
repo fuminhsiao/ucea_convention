@@ -46,13 +46,11 @@ export default function AboutPage() {
     return (
         <div>
             <PageHeader />
-            <PageTitle title="ABOUT"/>
+            <PageTitle title="Planning Committee"/>
             <SectionWrapper>
 
                     <SectionContent>
-                        We invite you to join us at the <strong>39th Annual UCEA Convention</strong> that
-                        will be held <strong>November 19–22, 2025</strong>, at the <strong>Sheraton Puerto Rico
-                            Resort and Casino in San Juan, Puerto Rico.</strong> <br /><br />The 2025 Convention
+                       The 2025 Convention
                         Planning Committee includes Shelby Cosner (University of Georgia),
                         Kaneshia Dorsan (University of Georgia), Osly Flores (University of
                         Illinois at Urbana-Champaign), Hans Klar (Clemson University),

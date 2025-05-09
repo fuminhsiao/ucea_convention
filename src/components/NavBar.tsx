@@ -81,7 +81,7 @@ const NavBar = () => {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out md:py-7"
+      className="fixed top-0 left-0 w-full z-999 transition-all duration-500 ease-in-out md:py-7"
       style={{
         background: scrolled
           ? "linear-gradient(to bottom, #042d46, rgba(4, 45, 70, 0))"

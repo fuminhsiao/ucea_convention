@@ -28,41 +28,47 @@ export const CFP_2025: CFPData = {
       bg: "bg-white",
       content: (
         <>
-          <p>
-            The University Council for Educational Administration (UCEA) invites
-            you to join us as we open the Call for Proposals for the 2025 Annual
-            Convention. This year’s theme,{" "}
-            <strong><em>
-              “Fostering Leadership Resilience Through Collaboration and
-              Community”
-            </em></strong>{" "}
-            /{" "}<strong><em>
-              “Fomentando la Resiliencia de Liderazgo a través de Colaboración y
-              Comunidad”
-            </em></strong>
+  <p className="text-[#b91c1c] font-semibold mb-4">
+    Proposals must be received by Wednesday, May 14, 2025. All proposals must be submitted electronically through All Academic. This site will officially open March 26, 2025.
+  </p>
 
-            , challenges educational leaders, researchers, and practitioners to
-            envision transformative possibilities for educational leadership and
-            build more inclusive, resilient communities.
-            <br />
-            <br />
-            We welcome proposals that elevate diverse voices, foster
-            collaboration, and showcase equity-centered leadership and research.
-            Submit your ideas by <strong>Wednesday, May 14, 2025</strong>, and
-            join us in{" "}
-            <strong>San Juan, Puerto Rico, November 19–22, 2025</strong>, to shape
-            the future of educational leadership.
-          </p>
-          <div className="flex justify-end mt-6">
-            <a
-              target="_blank"
-              href="https://www.ucea.org/docs/UCEA_Convention_2025_CFP_031925.pdf"
-              className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
-            >
-              VIEW PDF
-            </a>
-          </div>
-        </>
+  <p>
+    The University Council for Educational Administration (UCEA) invites
+    you to join us as we open the Call for Proposals for the 2025 Annual
+    Convention. This year’s theme,{" "}
+    <strong><em>
+      “Fostering Leadership Resilience Through Collaboration and
+      Community”
+    </em></strong>{" "}
+    /{" "}
+    <strong><em>
+      “Fomentando la Resiliencia de Liderazgo a través de Colaboración y
+      Comunidad”
+    </em></strong>
+    , challenges educational leaders, researchers, and practitioners to
+    envision transformative possibilities for educational leadership and
+    build more inclusive, resilient communities.
+    <br />
+    <br />
+    We welcome proposals that elevate diverse voices, foster
+    collaboration, and showcase equity-centered leadership and research.
+    Submit your ideas by <strong>Wednesday, May 14, 2025</strong>, and
+    join us in{" "}
+    <strong>San Juan, Puerto Rico, November 19–22, 2025</strong>, to shape
+    the future of educational leadership.
+  </p>
+
+  <div className="flex justify-end mt-6">
+    <a
+      target="_blank"
+      href="https://www.ucea.org/docs/UCEA_Convention_2025_CFP_031925.pdf"
+      className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
+    >
+      VIEW PDF
+    </a>
+  </div>
+</>
+
       ),
     },
     {

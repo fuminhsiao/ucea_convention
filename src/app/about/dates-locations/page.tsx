@@ -39,7 +39,7 @@ export default function DateAndLocationPage() {
           </p>
 
           <Link
-            href="/hotel"
+            href="/attendee-info/hotel"
             className="inline-block mt-6 bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800 transition"
           >
             View Hotel & Travel Details

@@ -34,7 +34,7 @@ export default function InfoSection({
             </p>
           ))}
           <Link href={buttonLink}>
-            <button className="bg-white text-black font-semibold px-6 py-3 rounded-md mt-4 hover:bg-gray-200 transition">
+            <button className="bg-white text-black font-semibold px-6 py-3 rounded-md mt-4 hover:bg-gray-200 transition cursor-pointer">
               {buttonText}
             </button>
           </Link>

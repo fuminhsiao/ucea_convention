@@ -19,7 +19,7 @@ export default function Home() {
         title="TRAVEL & HOTEL"
         backgroundImageUrl={travelBg.src}
         buttonText="LEARN MORE"
-        buttonLink="/hotel"
+        buttonLink="/attendee-info/hotel"
         paragraphs={[
           "We are thrilled to welcome you to the 2025 UCEA Convention hosted at the Sheraton Puerto Rico Resort and Casino in the vibrant city of San Juan.",
           "Located in the Convention Center District and just minutes from historic Old San Juan, the Sheraton offers exceptional amenities, breathtaking ocean views, and convenient access to local attractions.",

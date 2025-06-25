@@ -16,17 +16,24 @@ export default function ComingSoonPage({
   linkText = "View Previous Page",
 }: ComingSoonPageProps) {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-white text-center px-6">
-      <h1 className="text-4xl font-bold text-gray-800 mb-4">{title}</h1>
-      <p className="text-lg text-gray-600 mb-6">{message}</p>
-      {linkUrl && (
-  <Link href={linkUrl} target="_blank" rel="noopener noreferrer">
-    <div className="px-6 py-3 bg-[#004a78] text-white rounded-lg hover:bg-[#0067a3] transition cursor-pointer">
-      {linkText}
-    </div>
-  </Link>
-)}
-
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#004a78] to-white">
+      {/* Gradient background with spacing for NAV visibility */}
+      <div className="h-24 w-full" />
+      <div className="flex flex-col justify-center items-center text-center px-6 flex-grow">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4 bg-opacity-80 px-4 py-2 rounded-md">
+          {title}
+        </h1>
+        <p className="text-lg text-gray-700 mb-6  bg-opacity-70 px-4 py-2 rounded-md">
+          {message}
+        </p>
+        {linkUrl && (
+          <Link href={linkUrl} target="_blank" rel="noopener noreferrer">
+            <div className="px-6 py-3 bg-[#004a78] text-white rounded-lg hover:bg-[#0067a3] transition cursor-pointer">
+              {linkText}
+            </div>
+          </Link>
+        )}
+      </div>
     </div>
   );
 }

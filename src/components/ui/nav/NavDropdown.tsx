@@ -1,5 +1,3 @@
-
-// components/NavDropdown.tsx
 "use client";
 
 import Link from "next/link";
@@ -33,8 +31,8 @@ export default function NavDropdown({
       >
         <motion.button
           whileHover={{ scale: 1.05 }}
-          className={`flex items-center gap-1 transition-all cursor-pointer duration-500 ease-in-out  ${
-            scrolled ? "text-white text-sm" : "text-[#000000] text-base"
+          className={`text-white flex items-center gap-1 transition-all cursor-pointer duration-500 ease-in-out ${
+            scrolled ? "text-sm" : "text-base"
           }`}
         >
           {label}

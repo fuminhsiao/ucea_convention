@@ -109,7 +109,7 @@ export default function HotelTravelPage() {
           </p>
           <p className="mt-4">
             Reserve your room{" "}
-            <a href="https://book.passkey.com/event/51030830/owner/5772432/home?utm_campaign=297253416" className="text-blue-700 underline">
+            <a href="https://book.passkey.com/event/51030830/owner/5772432/home?utm_campaign=297253416" target="_blank" className="text-blue-700 underline">
               online
             </a>{" "}
             or by calling <b>1-866-932-7269</b>. Use code <b>AEC</b> when

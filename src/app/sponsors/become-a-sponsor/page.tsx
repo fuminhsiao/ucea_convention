@@ -24,13 +24,11 @@ export default function SponsorshipPage() {
           </p>
            <div className="mt-6">
             <a
-              href="https://members.ucea.org/members/store.php?orgcode=UCEA"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-6 py-3 text-white bg-blue-700 hover:bg-blue-800 rounded-md text-center font-semibold"
-            >
-              Sponsor UCEA25
-            </a>
+      target="_blank"
+      href="https://www.ucea.org/docs/UCEA_Convention_2025_CFP_031925.pdf"
+      className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
+    >Sponsor UCEA25</a>
+            
           </div>
         </SectionContent>
       </SectionWrapper>

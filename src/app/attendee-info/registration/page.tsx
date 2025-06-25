@@ -30,13 +30,13 @@ export default function RegistrationPage() {
           </ul><br/>
           <p>
             <a href="https://www.ucea.org/member_directory.php" target="_blank" className="text-blue-700 underline">Click here</a> to see if your institution is a UCEA member.
-          </p>
+          </p><br/>
           <p>
             <a
               href="https://members.ucea.org/members/evr/reg_event.php?orgcode=UCEA&evid=55440597"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-700 underline"
+               className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
             >
               Register for UCEA25
             </a>

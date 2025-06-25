@@ -23,7 +23,7 @@ export default function ComingSoonPage({
         <h1 className="text-4xl font-bold text-gray-800 mb-4 bg-opacity-80 px-4 py-2 rounded-md">
           {title}
         </h1>
-        <p className="text-lg text-gray-700 mb-6  bg-opacity-70 px-4 py-2 rounded-md">
+        <p className="text-lg text-gray-700 mb-6 bg-opacity-70 px-4 py-2 rounded-md">
           {message}
         </p>
         {linkUrl && (

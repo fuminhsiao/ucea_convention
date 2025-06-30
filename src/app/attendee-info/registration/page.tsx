@@ -5,6 +5,8 @@ import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionTitle from "@/components/ui/general/SectionTitle";
 import SectionContent from "@/components/ui/general/SectionContent";
+import RegistrationRates from "@/components/ui/general/RegistrationRates";
+
 
 export default function RegistrationPage() {
   return (
@@ -43,6 +45,12 @@ export default function RegistrationPage() {
           </p>
         </SectionContent>
       </SectionWrapper>
+      <SectionWrapper>
+  <SectionTitle>Registration Rates</SectionTitle>
+  <SectionContent>
+    <RegistrationRates />
+  </SectionContent>
+</SectionWrapper>
 
       <SectionWrapper>
         <SectionTitle>UCEA 2025 Annual Convention Refund Policy</SectionTitle>

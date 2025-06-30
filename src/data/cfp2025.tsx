@@ -24,7 +24,7 @@ const exampleItems = [
 export const CFP_2025: CFPData = {
   sections: [
     {
-      title: "GENRERAL INFO",
+      title: "GENERAL INFO",
       bg: "bg-white",
       content: (
         <>

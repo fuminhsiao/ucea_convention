@@ -17,18 +17,18 @@ export default function SponsorshipPage() {
           <p>
             Each year, the UCEA Convention is attended by top educational leadership research and policy scholars from institutions across the nation and internationally. As a non-profit organization, UCEA relies on the generous support of members like you to deliver a successful Annual Convention, Graduate Student Summit, and Jackson Scholars Research Symposium.
           </p>
-         
+
 
           <p className="mt-4">
             Sponsorship for the UCEA Convention offers a premier opportunity to showcase your institution. Sponsors are recognized prominently in the lead-up to and throughout the Convention.
           </p>
-           <div className="mt-6">
+          <div className="mt-6">
             <a
-      target="_blank"
-      href="https://www.ucea.org/docs/UCEA_Convention_2025_CFP_031925.pdf"
-      className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
-    >Sponsor UCEA25</a>
-            
+              target="_blank"
+              href="https://www.ucea.org/docs/UCEA_Convention_2025_CFP_031925.pdf"
+              className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
+            >Sponsor UCEA25</a>
+
           </div>
         </SectionContent>
       </SectionWrapper>
@@ -150,7 +150,7 @@ export default function SponsorshipPage() {
         </SectionContent>
       </SectionWrapper>
 
-      
+
     </div>
   );
 }

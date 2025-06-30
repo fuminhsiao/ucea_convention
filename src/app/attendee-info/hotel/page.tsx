@@ -102,9 +102,15 @@ export default function HotelTravelPage() {
           </p>
           <p className="mt-6">
             The 2025 UCEA Annual Convention host hotel is the{" "}
-            <b>Sheraton Puerto Rico Resort and Casino</b>. We encourage you to
-            make your reservation early as rooms sell quickly. All reservations
-            must be made by <b>Monday, October 24, 2025</b>, to receive the
+            <a
+              href="https://www.marriott.com/en-us/hotels/sjusi-sheraton-puerto-rico-resort-and-casino/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline"
+            >
+              Sheraton Puerto Rico Resort and Casino
+            </a>
+            . We encourage you to make your reservation early as rooms sell quickly. All reservations must be made by <b>Monday, October 24, 2025</b>, to receive the
             rates <b>listed above</b>.
           </p>
           <p className="mt-4">

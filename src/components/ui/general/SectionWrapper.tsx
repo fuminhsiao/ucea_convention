@@ -14,7 +14,7 @@ export default function SectionWrapper({
   style = {},
 }: SectionWrapperProps) {
   return (
-    <section className={`py-20 px-5 md:px-0 ${className}`} style={style}>
+    <section className={`pb-15 px-5 md:px-0 ${className}`} style={style}>
       <div
         className={`xl:w-[85%] mx-auto flex flex-col ${
           center ? "items-center" : "items-start"

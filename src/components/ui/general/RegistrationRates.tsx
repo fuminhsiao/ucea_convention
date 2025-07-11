@@ -5,19 +5,29 @@ export default function RegistrationRates() {
     <div className="flex flex-wrap justify-between gap-4">
       <div className="w-full md:w-[32%] border border-black rounded-xl p-6 min-h-[437px]">
         <h2 className="text-center text-2xl font-bold border-b border-gray-700 pb-3 mb-3">Faculty</h2>
+
+        {/* Early Rate */}
         <h5 className="text-center pt-2 font-semibold">Early Rate</h5>
         <h6 className="text-center text-blue-700 mb-1">Ends Sep 3, 2025</h6>
         <p className="text-center">UCEA Members: $270</p>
         <p className="text-center">Non-UCEA Members: $340</p>
+        <p className="text-center">Retired/Emeritus Faculty: $200</p>
+
+        {/* Standard Rate */}
         <h5 className="text-center pt-4 font-semibold">Standard Rate</h5>
         <h6 className="text-center text-blue-700 mb-1">Sep 4 - Oct 15, 2025</h6>
         <p className="text-center">UCEA Members: $325</p>
         <p className="text-center">Non-UCEA Members: $390</p>
+        <p className="text-center">Retired/Emeritus Faculty: $240</p>
+
+        {/* Late/On-Site Rate */}
         <h5 className="text-center pt-4 font-semibold">Late/On-Site Rate</h5>
         <h6 className="text-center text-blue-700 mb-1">Oct 16 - Nov 22, 2025</h6>
         <p className="text-center">UCEA Members: $385</p>
         <p className="text-center">Non-UCEA Members: $465</p>
+        <p className="text-center">Retired/Emeritus Faculty: $290</p>
       </div>
+
 
       <div className="w-full md:w-[32%] border border-black rounded-xl p-6 min-h-[437px]">
         <h2 className="text-center text-2xl font-bold border-b border-gray-700 pb-3 mb-3">Graduate Student</h2>

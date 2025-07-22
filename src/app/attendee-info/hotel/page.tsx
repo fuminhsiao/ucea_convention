@@ -76,7 +76,7 @@ export default function HotelTravelPage() {
   return (
     <div className="w-full">
       <PageHeader
-        showOverlay
+        
         imageSrc={Hotel}
         altText="Custom Convention Banner"
       />

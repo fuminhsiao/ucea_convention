@@ -15,6 +15,7 @@ export default function Home() {
       <Hero />
       <Countdown />
       <CallForProposalsSection />
+      
       <InfoSection
         title="TRAVEL & HOTEL"
         backgroundImageUrl={travelBg.src}

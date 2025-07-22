@@ -22,7 +22,7 @@ const navStructure = [
     ],
   },
   {
-    label: "CALL FOR PROPOSALS",
+    label: "CFP",
     items: [
       { label: "Call for Proposals", href: "/cfp/2025" },
       { label: "Session Types", href: "/cfp/session-types" },
@@ -111,7 +111,7 @@ const NavBar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6">
-          <ul className="flex space-x-6 uppercase font-medium cursor-pointer transition-all duration-500 ease-in-out">
+          <ul className="flex  justify-end space-x-6 uppercase font-medium cursor-pointer transition-all duration-500 ease-in-out">
             {navStructure.map(({ label, items }) => (
               <NavDropdown
                 key={label}
@@ -124,7 +124,14 @@ const NavBar = () => {
               />
             ))}
           </ul>
+           {/* REGISTER BUTTON */}
+  <Link href="/attendee-info/registration">
+    <button className="ml-4 px-5 py-2  text-white font-semibold rounded-md border-2 border-white hover:bg-[#3366cc] hover:text-white transition cursor-pointer" >
+      REGISTER
+    </button>
+  </Link>
         </div>
+        
       </div>
 
       {/* Mobile Menu */}

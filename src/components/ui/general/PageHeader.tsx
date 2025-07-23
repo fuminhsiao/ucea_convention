@@ -27,7 +27,7 @@ export default function PageHeader({
         priority
       />
       {showOverlay && (
-        <div className="absolute inset-0 bg-gradient-to-b from-[#252525] to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#75caff] to-transparent pointer-events-none" />
       )}
     </div>
   );

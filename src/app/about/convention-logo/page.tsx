@@ -53,7 +53,7 @@ export default function ConventionLogoPage() {
             <div className="w-full md:w-1/2">
             <SectionTitle>About the Artist</SectionTitle>
               <p className="leading-relaxed">
-                <strong>Mónica Paola Rodríguez</strong> is a professional illustrator who grew up loving art and telling diverse stories. She earned her Bachelor Degree in Fine Arts at SCAD in Savannah, Georgia. From then on, she has been representing her Puerto Rican culture by freelancing, illustrating children's books and products for various clients. These include Scholastic Inc., Disney Publishing, McDonald's, and many more. Mónica is from and currently residing in San Juan, Puerto Rico.
+                <strong>Mónica Paola Rodríguez</strong> is a professional illustrator who grew up loving art and telling diverse stories. She earned her Bachelor Degree in Fine Arts at SCAD in Savannah, Georgia. From then on, she has been representing her Puerto Rican culture by freelancing, illustrating children&apos;s books and products for various clients. These include Scholastic Inc., Disney Publishing, McDonald&apos;s, and many more. Mónica is from and currently residing in San Juan, Puerto Rico.
               </p>
               <p className="mt-4">
                 <a

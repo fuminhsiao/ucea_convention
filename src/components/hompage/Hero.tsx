@@ -4,11 +4,13 @@ import hero1 from "@/assets/hero1.jpg";
 import hero2 from "@/assets/hero2.jpg";
 import hero3 from "@/assets/hero3.jpg";
 import hero4 from "@/assets/hero4.jpg";
+import hero5 from "@/assets/UCEA25_Horizontal.png";
+
 
 import HeroSlideshow from "./HeroSlideshow";
 import TypedSlogan from "./TypedSlogan";
 
-const heroImages = [hero1, hero2, hero3, hero4];
+const heroImages = [hero5, hero1, hero2, hero3, hero4];
 const slogans = [
   `“Fostering Leadership Resilience\nThrough Collaboration and Community”`,
   `“Fomentando la Resiliencia de Liderazgo\na través de Colaboración y Comunidad.”`,

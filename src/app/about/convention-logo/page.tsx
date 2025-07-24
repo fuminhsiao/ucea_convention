@@ -18,20 +18,20 @@ export default function ConventionLogoPage() {
       <PageHeader showOverlay imageSrc={heroImage} altText="UCEA25 Hero" />
       <PageTitle title="Convention Logo" />
 
-      {/* Section 1: Vertical Logo Left + Text Right */}
+      {/* Section 1: Horizontal Logo Left + Text Right */}
       <SectionWrapper>
         <SectionContent>
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-full md:w-1/2 flex ">
+            <div className="w-full md:w-2/3 flex ">
               <Image
-                src={verticalLogo}
-                alt="UCEA25 Vertical Logo"
+                src={horizontalLogo}
+                alt="UCEA25 Horizontal Logo"
                 
                 className="rounded shadow-md"
               />
             </div>
             
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/3">
             <SectionTitle>Sonidos del Borinken</SectionTitle>
               <p className="leading-relaxed">
                 <strong>
@@ -78,14 +78,14 @@ export default function ConventionLogoPage() {
         </SectionContent>
       </SectionWrapper>
 
-      {/* Section 3: Full Width Horizontal Logo */}
+      {/* Section 3: Full Width Vertical Logo */}
       <SectionWrapper>
-        <SectionTitle>Horizontal Logo</SectionTitle>
+        <SectionTitle>Vertical Logo</SectionTitle>
         <SectionContent>
           <div className="w-full">
             <Image
-              src={horizontalLogo}
-              alt="UCEA25 Horizontal Logo"
+              src={verticalLogo}
+              alt="UCEA25 Vertical Logo"
               className="rounded shadow-md w-full h-auto"
               priority
             />

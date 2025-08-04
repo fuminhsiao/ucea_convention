@@ -52,7 +52,7 @@ const navStructure = [
     ],
   },
   {
-    label: "SPONSORS",
+    label: "SPONSOR/EXHIBIT",
     items: [
       { label: "Become a Sponsor", href: "/sponsors/become-a-sponsor" },
       { label: "Sponsors", href: "/sponsors/sponsors" },

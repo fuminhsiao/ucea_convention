@@ -253,7 +253,7 @@ type HotelBlockProps = {
       phone="1-866-912-1011"
       code="UOBUOBA"
       details={[
-        "King/Double: $214 (Total rate including destination fee and taxes $276.08)",
+        "King/Double: $214 (Total rate including destination fee and taxes $259.34)",
         "View the rate details when booking online to see view destination fee details.",
         "Rooms available at group rate from November 18 through November 23",
         "Reservations must be made by Friday, October 18, 2025",

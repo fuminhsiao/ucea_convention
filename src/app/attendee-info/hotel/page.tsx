@@ -229,7 +229,7 @@ type HotelBlockProps = {
         "Rate includes complimentary daily Full American Breakfast Buffet",
         "Rooms available at group rate from November 18 through November 23",
         "Contact the hotel directly to add room nights if you want to extend your reservation up to 3 days pre and post the dates above.",
-        "Reservations must be made by Monday, October 25, 2025",
+        "Reservations must be made by Monday, October 20, 2025",
       ]}
     />
     <HotelBlock
@@ -254,9 +254,9 @@ type HotelBlockProps = {
       code="UOBUOBA"
       details={[
         "King/Double: $214 (Total rate including destination fee and taxes $259.34)",
-        "View the rate details when booking online to see view destination fee details.",
+        "View the rate details when booking online to view destination fee details.",
         "Rooms available at group rate from November 18 through November 23",
-        "Reservations must be made by Friday, October 18, 2025",
+        "Reservations must be made by Saturday, October 18, 2025",
       ]}
     />
   </SectionContent>

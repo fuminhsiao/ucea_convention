@@ -37,6 +37,7 @@ const navStructure = [
       { label: "Hotel", href: "/attendee-info/hotel" },
       { label: "Registration", href: "/attendee-info/registration" },
       { label: "Schedule at a Glance", href: "/attendee-info/schedule" },
+      { label: "Graduate Students", href: "/attendee-info/graduate-student" },
       { label: "Convention Program", href: "/attendee-info/program" },
       { label: "Presenter Tips", href: "/attendee-info/presenter-tips" },
       { label: "Facilitator Tips", href: "/attendee-info/facilitator-tips" },

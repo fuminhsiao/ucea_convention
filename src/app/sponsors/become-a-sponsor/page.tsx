@@ -25,7 +25,7 @@ export default function SponsorshipPage() {
           <div className="mt-6">
             <a
               target="_blank"
-              href="https://www.ucea.org/docs/UCEA_Convention_2025_CFP_031925.pdf"
+              href="https://members.ucea.org/members/store.php?orgcode=UCEA"
               className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
             >Sponsor UCEA25</a>
 

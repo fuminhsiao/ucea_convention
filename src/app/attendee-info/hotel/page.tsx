@@ -176,10 +176,9 @@ type HotelBlockProps = {
             </li>{" "}
             <li>Single: $209.00 + tax</li> <li>Double: $214.00 + tax</li>{" "}
           </ul>{" "}
-          <p className="mt-4">
+          <p className="mt-4 text-red-500">
             {" "}
-            Rooms available at group rate from{" "}
-            <b>November 13 through November 27</b>.{" "}
+            Rooms are sold out on Tuesday, Wednesday, and Thursday nights. Rooms are still available for Friday, Saturday, and Sunday nights.
           </p>{" "}
           <p className="mt-6">
             {" "}

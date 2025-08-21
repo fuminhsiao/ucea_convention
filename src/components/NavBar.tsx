@@ -55,10 +55,10 @@ const navStructure = [
   {
     label: "SPONSOR/EXHIBIT",
     items: [
-      { label: "Become a Sponsor", href: "/sponsors/become-a-sponsor" },
-      { label: "Sponsors", href: "/sponsors/sponsors" },
-      { label: "Become an Exhibitor", href: "/sponsors/become-an-exhibitor" },
-      { label: "Exhibitors", href: "/sponsors/exhibitors" },
+      { label: "Become a Sponsor", href: "/sponsors-exhibitors/become-a-sponsor" },
+      { label: "Sponsors", href: "/sponsors-exhibitors/sponsors" },
+      { label: "Become an Exhibitor", href: "/sponsors-exhibitors/become-an-exhibitor" },
+      { label: "Exhibitors", href: "/sponsors-exhibitors/exhibitors" },
     ],
   },
 ];

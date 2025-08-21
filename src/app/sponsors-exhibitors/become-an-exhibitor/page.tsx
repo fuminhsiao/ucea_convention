@@ -132,6 +132,21 @@ export default function ExhibitorPage() {
           <p>CSM: Steven Marrero (787) 993 3524</p>
         </SectionContent>
       </SectionWrapper>
+       <SectionWrapper>
+              <SectionTitle>Terms and Conditions</SectionTitle>
+              <SectionContent>
+                <p className="mb-4">
+                  Please review the full terms and conditions before proceeding with
+                  sponsorship.
+                </p>
+                <a
+                  href="/sponsors-exhibitors/exhibitors/terms-and-conditions"
+                  className="inline-block border border-blue-600 text-blue-600 px-4 py-2 text-lg font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
+                >
+                  Go to Terms and Conditions
+                </a>
+              </SectionContent>
+            </SectionWrapper>
     </div>
   );
 }

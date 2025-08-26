@@ -31,9 +31,8 @@ export default function NavDropdown({
       >
         <motion.button
           whileHover={{ scale: 1.05 }}
-          className={`text-white flex items-center gap-1 transition-all cursor-pointer duration-500 ease-in-out ${
-            scrolled ? "text-sm" : "text-base"
-          }`}
+          className={`text-white flex pb-3 items-center gap-1 transition-all cursor-pointer duration-500 ease-in-out ${scrolled ? "text-sm" : "text-base"
+            }`}
         >
           {label}
           <FontAwesomeIcon icon={faCaretDown} className="w-3 h-3 mt-0.5" />
@@ -43,15 +42,15 @@ export default function NavDropdown({
           {dropdownOpen === menu && (
             <motion.ul
               initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: -8 }}
               exit={{ opacity: 0, y: -10 }}
-              className="absolute left-0 top-full cursor-pointer mt-2 w-52 bg-[#f0f4ff] shadow-lg rounded border py-2 z-50"
+              className="absolute left-0 top-full mt-2 w-fit bg-[#f0f4ff] shadow-lg rounded border py-2 z-50"
             >
               {items.map(({ href, label }) => (
                 <li key={href}>
                   <Link
                     href={href}
-                    className="block px-4 py-2 cursor-pointer text-gray-800 hover:bg-[#e0e7ff] hover:text-[#1e3a8a] transition-colors duration-200 uppercase"
+                    className="block px-4 py-2 font-semibold  ml-1 mr-1  text-gray-700 hover:bg-[#e0e7ff] hover:text-[#1e3a8a] transition-colors duration-200 whitespace-nowrap"
                   >
                     {label}
                   </Link>

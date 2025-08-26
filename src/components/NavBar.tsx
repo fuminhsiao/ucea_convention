@@ -50,6 +50,7 @@ const navStructure = [
       { label: "Awards Luncheon", href: "/events/awards-luncheon" },
       { label: "Annual Banquet", href: "/events/banquet" },
       { label: "UCEA-Wallace Symposium", href: "/events/wallace-symposium" },
+      { label: "Communication-Oriented Capacity Building Sessions", href: "/events/special-session-1" },
     ],
   },
   {
@@ -112,7 +113,7 @@ const NavBar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6">
-          <ul className="flex  justify-end space-x-6 uppercase font-medium cursor-pointer transition-all duration-500 ease-in-out">
+          <ul className="flex  justify-end space-x-6 font-medium cursor-pointer transition-all duration-500 ease-in-out">
             {navStructure.map(({ label, items }) => (
               <NavDropdown
                 key={label}

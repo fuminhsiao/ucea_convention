@@ -5,104 +5,105 @@ import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 
-const sessionDate = {
-  day: "Saturday, November 22, 2025",
-  events: [
-    "9:20 – 10:30 a.m. | Capacity-Building for Communication & Engagement",
-  ],
-};
-
-const sessions = [
+const schedule = [
   {
-    title: "Invisibilized but Not Erased",
-    description:
-      "Leverage invisibility as a quiet but powerful resistance in authoritarian climates.",
-    facilitator: "Daniel D. Liou, Arizona State University",
+    day: "Wednesday, November 19, 2025",
+    events: [
+      "2:45 – 6:00 p.m. | Pre-Convention Workshops, CSLEE Work Session",
+      "5:00 – 5:30 p.m. | Jackson Scholars Network Research Convocation",
+      "5:00 – 6:00 p.m. | Graduate Student Summit Opening General Session",
+      "5:40 – 6:20 p.m. | Julie Laible Memorial Session for New UCEA Jackson Scholars",
+      "6:30 – 7:30 p.m. | Plenum & Graduate Student Reception",
+    ],
   },
   {
-    title: "Public Engagement Through Blogs & Social Media",
-    description:
-      "Build an online platform, craft compelling stories, and extend your research impact.",
-    facilitator: "Julian Vasquez Heilig, Western Michigan University",
+    day: "Thursday, November 20, 2025",
+    events: [
+      "7:15 – 8:00 a.m. | Breakfast for GSS Participant and Jackson Scholars",
+      "7:30 – 10:45 a.m. | UCEA Plenary Session & Breakfast",
+      "8:00 – 10:50 a.m. | Pre-Convention Workshops, GSS Research Presentations, JSN Research & Feedback Sessions",
+      "11:00 – 12:15 p.m. | Opening General Session",
+      "12:30 – 3:30 p.m. | UCEA Awards Luncheon or Open Lunch Time",
+      "2:15 – 3:30 p.m. | Research Presentations, GSS Programming",
+      "3:45 – 5:00 p.m. | Research Presentations, GSS Research Presentations",
+      "5:15 – 6:30 p.m. | Research Presentations, GSS Research Presentations",
+      "6:30 – 7:15 p.m. | Research Action Networks (RANs) & UCEA Partners Business Meetings",
+      "7:30 – 8:30 p.m. | Reception in Honor of Past UCEA Presidents",
+    ],
   },
   {
-    title: "Communicating Across Worldviews",
-    description:
-      "Explore lessons from *I Never Thought of It That Way* to build bridges through conversation.",
-    facilitator: "Martin Scanlan, Boston College",
+    day: "Friday, November 21, 2025",
+    events: [
+      "8:00 – 9:10 a.m. | Research Presentations, GSS Research Presentations",
+      "9:20 – 10:30 a.m. | General Session II",
+      "10:40 – 11:50 a.m. | Research Presentations, GSS Research Presentations",
+      "12:00 – 1:10 p.m. | Open Lunch Time, Research Action Networks (RANs) Business Meetings",
+      "1:20 – 2:30 p.m. | Research Presentations, GSS Research Presentations",
+      "2:40 – 3:50 p.m. | Research Presentations, GSS Programming, The Wallace Foundation Symposium",
+      "4:00 – 5:10 p.m. | Research Presentations, GSS Research Presentations",
+      "5:30 – 6:30 p.m. | General Session III: UCEA Presidential Address",
+      "7:00 – 8:00 p.m. | Barbara L. Jackson Scholars Recognition Ceremony",
+      "8:00 – 9:00 p.m. | Barbara L. Jackson Scholars Reception",
+    ],
   },
   {
-    title: "Writing Op-Eds & Media Communication",
-    description:
-      "Learn how to pitch, draft, and deliver your message through mainstream media.",
-    facilitator: "David DeMatthews, University of Texas at Austin",
-  },
-  {
-    title: "Scholarship in Action for Practitioners",
-    description:
-      "Translate your research into practitioner-friendly formats (e.g., *Education Week*, *Kappan*).",
-    facilitator: "Ann M. Ishimaru & Decoteau J. Irby",
+    day: "Saturday, November 22, 2025",
+    events: [
+      "8:00 – 9:10 a.m. | Research Presentations",
+      "9:20 – 10:30 a.m. | Community-Oriented Capacity Building Sessions",
+      "10:40 – 11:50 a.m. | Research Presentations",
+      "12:00 – 1:10 p.m. | Open Lunch Time, Research Action Networks (RANs) Business Meetings",
+      "1:20 – 2:30 p.m. | Research Presentations",
+      "2:30 – 3:00 p.m. | Afternoon Refreshments & Networking",
+      "3:00 – 4:10 p.m. | Research Presentations",
+      "4:20 – 5:30 p.m. | Research Presentations",
+      "TBA | UCEA Annual Banquet",
+    ],
   },
 ];
 
-export default function CapacityBuildingSchedule() {
+export default function SchedulePage() {
   return (
     <div className="w-full">
       <PageHeader />
-      <PageTitle title="Capacity-Building for Communication & Engagement" />
+      <PageTitle title="Schedule-at-a-Glance" />
 
       <SectionWrapper>
         <SectionContent>
-          <div className="mb-10">
-            <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-4 border-l-4 border-blue-500 pl-4">
-              {sessionDate.day}
-            </h3>
-            <ul className="space-y-2">
-              {sessionDate.events.map((event, idx) => {
-                const [time, content] = event.split(" | ");
-                return (
-                  <li
-                    key={idx}
-                    className="text-base md:text-lg text-gray-800 pl-2 relative before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-2 before:h-2 before:rounded-full before:bg-blue-600 before:-translate-x-4"
-                  >
-                    <span className="font-medium">{time} | </span>
-                    <a
-                      href="https://www.ucea.org/docs/UCEA_Convention_Capacity_Building_for_Communication_082525.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline text-blue-600 hover:text-blue-800"
+          {schedule.map((day, index) => (
+            <div key={index} className="mb-10">
+              <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-4 border-l-4 border-blue-500 pl-4">
+                {day.day}
+              </h3>
+              <ul className="space-y-2">
+                {day.events.map((event, idx) => {
+                  const targetText = "Community-Oriented Capacity Building Sessions";
+                  const [time, content] = event.split(" | ");
+
+                  return (
+                    <li
+                      key={idx}
+                      className="text-base md:text-lg text-gray-800 pl-2 relative before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-2 before:h-2 before:rounded-full before:bg-blue-600 before:-translate-x-4"
                     >
-                      {content}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-
-          <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-4">
-            Featured Workshop Sessions
-          </h3>
-          <ul className="space-y-6">
-            {sessions.map((s, index) => (
-              <li key={index} className="text-base md:text-lg text-gray-900">
-                <p className="font-bold">{s.title}</p>
-                <p className="italic">{s.description}</p>
-                <p className="text-sm text-gray-700 mt-1">Facilitator: {s.facilitator}</p>
-              </li>
-            ))}
-          </ul>
-
-          <div className="mt-10">
-            <a
-              href="https://www.ucea.org/docs/UCEA_Convention_Capacity_Building_for_Communication_082525.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#1e3a8a] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#3355aa] transition-colors duration-300"
-            >
-              📄 Download Full PDF
-            </a>
-          </div>
+                      <span className="font-medium">{time} | </span>
+                      {content === targetText ? (
+                        <a
+                          href="https://www.ucea.org/docs/UCEA_Convention_Capacity_Building_for_Communication_082525.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline text-blue-600 hover:text-blue-800"
+                        >
+                          {targetText}
+                        </a>
+                      ) : (
+                        content
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
         </SectionContent>
       </SectionWrapper>
     </div>

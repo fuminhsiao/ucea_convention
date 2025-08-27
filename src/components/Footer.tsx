@@ -80,16 +80,17 @@ const Footer = () => {
             { label: "Awards Luncheon", href: "/events/awards-luncheon" },
             { label: "Annual Banquet", href: "/events/banquet" },
             { label: "UCEA-Wallace Symposium", href: "/events/wallace-symposium" },
+            { label: "Communication-Oriented Capacity Building Sessions", href: "/events/special-session-1" },
           ]}
         />
 
         <FooterColumn
           title="Sponsors & Exhibitors"
           links={[
-            { label: "Become a Sponsor", href: "/sponsors/become-a-sponsor" },
-            { label: "Sponsors", href: "/sponsors/sponsors" },
-            { label: "Become an Exhibitor", href: "/sponsors/become-an-exhibitor" },
-            { label: "Exhibitors", href: "/sponsors/exhibitors" },
+            { label: "Become a Sponsor", href: "/sponsors-exhibitors/become-a-sponsor" },
+            { label: "Sponsors", href: "/sponsors-exhibitors/sponsors" },
+            { label: "Become an Exhibitor", href: "/sponsors-exhibitors/become-an-exhibitor" },
+            { label: "Exhibitors", href: "/sponsors-exhibitors/exhibitors" },
           ]}
         />
 

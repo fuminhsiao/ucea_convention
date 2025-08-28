@@ -21,14 +21,7 @@ const REGISTER_CONTENT = {
 };
 
 // ====== 🗂 CFP ARCHIVE (hidden from UI, for future use) ======
-const CFP_ARCHIVE = {
-  title: "2025 CALL FOR PROPOSALS",
-  themeEn: "Fostering Leadership Resilience Through Collaboration and Community",
-  themeEs: "Fomentando la Resiliencia de Liderazgo a través de Colaboración y Comunidad.",
-  deadline: "Wednesday, May 14, 2025",
-  link: "http://www.ucea.org",
-  openDate: "April 1, 2025",
-};
+
 
 export default function KeyInfoSection() {
   return (

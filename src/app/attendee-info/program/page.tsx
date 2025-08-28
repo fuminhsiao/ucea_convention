@@ -6,7 +6,7 @@ import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 
 
-const SchedulePage = () => {
+const ProgramPage = () => {
   return (
     <div className="w-full">
       <PageHeader />
@@ -18,7 +18,7 @@ const SchedulePage = () => {
 
             <li>
               Access the online schedule by clicking the red{" "}
-              <strong>UCEA Member Login</strong> button and then the yellow{" "}
+              UCEA Member Login button or direct <a target="_blank" className="text-blue-600 underline" href="https://www.viethconsulting.com/members/mlogin.php?org_id=UCEA">Member Login Link Here</a> and then the yellow{" "}
               <strong>All Academic</strong> button.
             </li>
             <li>
@@ -47,4 +47,4 @@ const SchedulePage = () => {
   );
 };
 
-export default SchedulePage;
+export default ProgramPage;

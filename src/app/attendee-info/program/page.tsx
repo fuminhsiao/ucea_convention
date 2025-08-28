@@ -4,19 +4,19 @@ import PageHeader from "@/components/ui/general/PageHeader";
 import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
+
 import Image from "next/image";
 
 const SchedulePage = () => {
   return (
     <div className="w-full">
       <PageHeader />
-      <PageTitle title="Schedule at a Glance" />
+      <PageTitle title="Convention Program" />
       <SectionWrapper>
         <SectionContent>
-          <ul className="list-disc list-inside space-y-3 text-base text-gray-800">
-            <li>
-              The schedule for <strong>#UCEA25</strong> is now available in All Academic.
-            </li>
+          The schedule for <strong>#UCEA25</strong> is now available in All Academic.
+          <ul className="list-disc m-6 space-y-3 pl-6 text-gray-800">
+
             <li>
               Access the online schedule by clicking the red{" "}
               <strong>UCEA Member Login</strong> button and then the yellow{" "}
@@ -26,24 +26,21 @@ const SchedulePage = () => {
               <strong>Note:</strong> The schedule is still in progress and not finalized.
             </li>
             <li>
-              <strong>Saturday presentations or sessions will not be moved.</strong> Please do not ask.
+              <em>Saturday presentations or sessions will not be moved. Please do not ask.</em>
             </li>
             <li>
               Plan your travel accordingly.
             </li>
-            <li>
-              For presentation/session updates, presenter affiliations, or other corrections,
-              please email us at{" "}
+            
+          </ul>
+
               <a
                 href="mailto:convention@ucea.org"
                 className="text-blue-600 underline"
               >
-                convention@ucea.org
-              </a>
-              .
-            </li>
-          </ul>
-
+                Email
+              </a> us with any presentation/session updates, presenter affiliations, or other corrections.  
+              
           <div className="pt-6">
             <p className="mb-3">
               Click the yellow button as shown below to access All Academic:

@@ -37,8 +37,9 @@ const navStructure = [
       { label: "Hotel", href: "/attendee-info/hotel" },
       { label: "Registration", href: "/attendee-info/registration" },
       { label: "Schedule at a Glance", href: "/attendee-info/schedule" },
-      { label: "Graduate Students", href: "/attendee-info/graduate-student" },
-      { label: "Convention Program", href: "/attendee-info/program" },
+      { label: "Program", href: "/attendee-info/program" },
+            { label: "International Attendee", href: "/attendee-info/international-attendee" },
+
       { label: "Presenter Tips", href: "/attendee-info/presenter-tips" },
       { label: "Facilitator Tips", href: "/attendee-info/facilitator-tips" },
     ],
@@ -49,6 +50,8 @@ const navStructure = [
       { label: "General Sessions", href: "/events/general-sessions" },
       { label: "Awards Luncheon", href: "/events/awards-luncheon" },
       { label: "Annual Banquet", href: "/events/banquet" },
+      { label: "Graduate Students", href: "/events/graduate-student" },
+
       { label: "UCEA-Wallace Symposium", href: "/events/wallace-symposium" },
       { label: "Communication-Oriented Capacity Building Sessions", href: "/events/special-session-1" },
     ],
@@ -126,14 +129,14 @@ const NavBar = () => {
               />
             ))}
           </ul>
-           {/* REGISTER BUTTON */}
-  <Link href="/attendee-info/registration">
-    <button className="ml-4 px-5 py-2  text-white font-semibold rounded-md border-2 border-white hover:bg-[#3366cc] hover:text-white transition cursor-pointer" >
-      REGISTER
-    </button>
-  </Link>
+          {/* REGISTER BUTTON */}
+          <Link href="/attendee-info/registration">
+            <button className="ml-4 px-5 py-2  text-white font-semibold rounded-md border-2 border-white hover:bg-[#3366cc] hover:text-white transition cursor-pointer" >
+              REGISTER
+            </button>
+          </Link>
         </div>
-        
+
       </div>
 
       {/* Mobile Menu */}

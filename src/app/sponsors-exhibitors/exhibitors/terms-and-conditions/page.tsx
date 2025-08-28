@@ -7,7 +7,7 @@ import PageTitle from "@/components/ui/general/PageTitle";
 export default function ExhibitorTermsPage() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#bdbdbd] to-white pt-50" >
-      <PageTitle title="Exhibitor Terms and Conditions" />
+      <PageTitle title="Exhibitor Terms and Conditions" subtitle="Updated August 20, 2025"/>
       <SectionWrapper>
         <SectionContent>
           <p>

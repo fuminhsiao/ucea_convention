@@ -4,7 +4,7 @@
 import travelBg from "@/assets/travel.jpg";
 
 import Countdown from "@/components/hompage/Countdown";
-import CallForProposalsSection from "@/components/hompage/CallForProposalsSection";
+import KeyInfoSection from "@/components/hompage/KeyInfoSection";
 import InfoSection from "@/components/hompage/InfoSection";
 import ShopSection from "@/components/hompage/ShopSection";
 import Hero from "@/components/hompage/Hero";
@@ -14,7 +14,7 @@ export default function Home() {
 
       <Hero />
       <Countdown />
-      <CallForProposalsSection />
+      <KeyInfoSection />
       
       <InfoSection
         title="TRAVEL & HOTEL"

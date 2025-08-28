@@ -16,7 +16,7 @@ export default function ThemePage() {
       <SectionWrapper>
         <SectionTitle>Theme</SectionTitle>
         <SectionContent>
-          <p className="text-lg font-semibold italic">
+          <p className="font-semibold italic">
             “Fostering Leadership Resilience Through Collaboration and Community”
             <br />
             “Fomentando la Resiliencia de Liderazgo a través de Colaboración y Comunidad.”
@@ -36,6 +36,7 @@ export default function ThemePage() {
       <SectionWrapper>
         <SectionTitle>Key Themes</SectionTitle>
         <SectionContent>
+          
           <ul className="list-disc pl-6 space-y-2">
             <li>
               <strong>Resilience & R(ac)esilience:</strong> Recognizing leadership resilience as a response to adversity rooted in colonialism, oppression, and systemic inequities—especially for minoritized groups in education.

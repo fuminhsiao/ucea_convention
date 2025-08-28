@@ -7,9 +7,9 @@ import PageTitle from "@/components/ui/general/PageTitle";
 export default function TermsOfUsePage() {
   return (
     <div className="w-full pt-50">
-      <PageTitle title="Terms of Use" />
+      <PageTitle title="Terms of Use"/>
       <SectionWrapper>
-        <SectionContent className="space-y-6">
+          <SectionContent>
           <p>
             The University Council for Educational Administration (UCEA) provides this website and its related content and services in furtherance of UCEA’s nonprofit and tax-exempt mission. While UCEA strives to provide accurate and reliable information, it does not endorse, approve, or certify the accuracy, completeness, timeliness, or efficacy of any content. Use of this information is voluntary and should only proceed following independent review by qualified professionals. References to commercial products, processes, or services do not constitute or imply endorsement by UCEA.
           </p>

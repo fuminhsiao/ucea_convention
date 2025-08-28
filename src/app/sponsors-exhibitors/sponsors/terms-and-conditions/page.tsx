@@ -7,7 +7,7 @@ import PageTitle from "@/components/ui/general/PageTitle";
 export default function SponsorTermsPage() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#bdbdbd] to-white pt-50" >
-      <PageTitle title="Sponsorship Terms and Conditions" />
+      <PageTitle title="Sponsorship Terms and Conditions" subtitle="Updated August 20, 2025"/>
       <SectionWrapper>
         <SectionContent>
           <p>The following Terms and Conditions govern this contract (“Contract”) between the

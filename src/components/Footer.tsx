@@ -51,15 +51,15 @@ const Footer = () => {
         />
 
         <FooterColumn
-  title="Call for Proposals"
-  links={[
-    { label: "Call for Proposals", href: "/cfp/2025" },
-    { label: "Session Types", href: "/cfp/session-types" },
-    { label: "Submission Guidelines", href: "/cfp/submission-details" },
-    { label: "How to Submit a Strong Proposal", href: "/cfp/strong-proposal" },
-    { label: "Proposal Reviews", href: "/cfp/proposal-reviews" },
-  ]}
-/>
+          title="Call for Proposals"
+          links={[
+            { label: "Call for Proposals", href: "/cfp/2025" },
+            { label: "Session Types", href: "/cfp/session-types" },
+            { label: "Submission Guidelines", href: "/cfp/submission-details" },
+            { label: "How to Submit a Strong Proposal", href: "/cfp/strong-proposal" },
+            { label: "Proposal Reviews", href: "/cfp/proposal-reviews" },
+          ]}
+        />
 
         <FooterColumn
           title="Attendee Information"
@@ -79,6 +79,7 @@ const Footer = () => {
             { label: "General Sessions", href: "/events/general-sessions" },
             { label: "Awards Luncheon", href: "/events/awards-luncheon" },
             { label: "Annual Banquet", href: "/events/banquet" },
+            { label: "Graduate Students", href: "/events/graduate-student" },
             { label: "UCEA-Wallace Symposium", href: "/events/wallace-symposium" },
             { label: "Communication-Oriented Capacity Building Sessions", href: "/events/special-session-1" },
           ]}

@@ -26,7 +26,7 @@ const SchedulePage = () => {
               <strong>Note:</strong> The schedule is still in progress and not finalized.
             </li>
             <li>
-              <em>Saturday presentations or sessions will not be moved. Please do not ask.</em>
+              <em>Saturday presentations or sessions will not be moved.</em>
             </li>
             <li>
               Plan your travel accordingly.

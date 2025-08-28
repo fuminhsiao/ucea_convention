@@ -5,7 +5,6 @@ import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 
-import Image from "next/image";
 
 const SchedulePage = () => {
   return (
@@ -41,21 +40,7 @@ const SchedulePage = () => {
                 Email
               </a> us with any presentation/session updates, presenter affiliations, or other corrections.  
               
-          <div className="pt-6">
-            <p className="mb-3">
-              Click the yellow button as shown below to access All Academic:
-            </p>
-            <div className="w-full max-w-2xl relative aspect-[3/2] rounded-md overflow-hidden border shadow-md">
-              <Image
-                src="https://ucea.org/photos/Access_All_Academic_Here_1_08272025213115.PNG"
-                alt="All Academic Button"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
+          
         </SectionContent>
       </SectionWrapper>
     </div>

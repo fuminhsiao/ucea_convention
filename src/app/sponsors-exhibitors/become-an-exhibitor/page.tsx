@@ -31,7 +31,7 @@ export default function ExhibitorPage() {
           <p>San Juan, PR 00907</p>
           <p>787-993-3500</p>
           <p><a target="_blank"
-              href="https://members.ucea.org/members/evr/reg_main.php?orgcode=UCEA&evid=55440597"  className="text-blue-600 underline">Website</a></p>
+              href="https://www.marriott.com/en-us/hotels/sjusi-sheraton-puerto-rico-resort-and-casino/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"  className="text-blue-600 underline">Website</a></p>
         </SectionContent>
       </SectionWrapper>
 

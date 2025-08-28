@@ -20,7 +20,7 @@ export default function RegistrationPage() {
             Register early to secure your spot at the 2025 UCEA Annual Convention and take advantage of discounted rates. 
           </p><br/>
           <p>
-            Register by clicking on the <b>Member Login</b> button in the <a href="https://www.ucea.org/" target="_blank" className="text-blue-700 underline">ucea homepage</a> upper right corner. If you are unable to log in to your member profile page, please email
+            Register by clicking on the <b>Member Login</b> button in the <a href="https://www.ucea.org/" target="_blank" className="text-blue-700 underline">ucea homepage</a> upper right corner or direct <a target="_blank" className="text-blue-600 underline" href="https://www.viethconsulting.com/members/mlogin.php?org_id=UCEA">Member Login Link Here</a>. If you are unable to log in to your member profile page, please email
             <a href="mailto:info@ucea.org" className="text-blue-700 underline"> info@ucea.org</a>.
           </p><br/>
           <p>All attendees must register for the Convention. This includes the following:</p>

@@ -68,7 +68,7 @@ export default function RegistrationPage() {
                 <tr>
                   <th className="border px-4 py-2">Category</th>
                   <th className="border px-4 py-2">Timeframe</th>
-                  <th className="border px-4 py-2">Date</th>
+                  <th className="border px-4 py-2">Registration Date</th>
                   <th className="border px-4 py-2">Refund</th>
                   <th className="border px-4 py-2">Processing Fee</th>
                 </tr>

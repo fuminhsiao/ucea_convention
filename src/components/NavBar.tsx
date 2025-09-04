@@ -53,7 +53,7 @@ const navStructure = [
       { label: "Graduate Students", href: "/events/graduate-student" },
 
       { label: "UCEA-Wallace Symposium", href: "/events/wallace-symposium" },
-      { label: "Communication-Oriented Capacity Building Sessions", href: "/events/special-session-1" },
+      { label: "Capacity-Building for Communication & Engagement", href: "/events/special-session-1" },
     ],
   },
   {

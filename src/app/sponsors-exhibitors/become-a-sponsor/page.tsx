@@ -36,7 +36,16 @@ export default function SponsorshipPage() {
             >
               Sponsor UCEA25
             </a>
+
           </div>
+          <div className="mt-6"> <a
+            target="_blank"
+            href="https://www.ucea.org/docs/2025_UCEA_Convention_Sponsorship_Prospectus_Aug27web.pdf"
+              className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
+          >
+            Sponsor Prospectus
+          </a></div>
+
         </SectionContent>
       </SectionWrapper>
 
@@ -177,6 +186,7 @@ export default function SponsorshipPage() {
                 </tr>
               </tbody>
             </table>
+
           </div>
         </SectionContent>
       </SectionWrapper>

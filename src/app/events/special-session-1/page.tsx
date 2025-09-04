@@ -50,7 +50,11 @@ export default function CapacityBuildingSchedule() {
     <div className="w-full">
       <PageHeader />
       <PageTitle title="Capacity-Building for Communication & Engagement" />
-
+<SectionWrapper>
+  <SectionContent>
+    This year’s convention is being designed as a space for the presentation of research and also for participant learning and capacity-building. In the UCEA call for proposals, the convention planning team communicated our intention to offer convention experiences that build communication and advocacy skills. To deliver on this intention, we have converted one of the four conference general sessions into a small set of six invited capacity building sessions—all focused on a range of communication-oriented capacity building issues. These sessions are intended to be instructive, interactive, and hands-on with a goal of building a specific communication capacity.  We hope you will join one of the following sessions on Saturday morning!
+  </SectionContent>
+</SectionWrapper>
       <SectionWrapper>
         <SectionContent>
           <div className="mb-10">

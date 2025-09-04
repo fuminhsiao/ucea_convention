@@ -19,7 +19,14 @@ export default function ExhibitorPage() {
 
       <SectionWrapper>
         <SectionContent>
-          <p>UCEA welcomes exhibitors to the 2025 Annual Convention held in San Juan, PR!</p>
+          <p>UCEA welcomes exhibitors to the 2025 Annual Convention held in San Juan, PR!</p><div className="mt-6">
+                  <a
+            target="_blank"
+            href="https://www.ucea.org/docs/2025_UCEA_Convention_Exhibitor_Prospectus_Aug27web.pdf"
+              className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
+          >
+            Exhibitors Prospectus
+          </a></div>
         </SectionContent>
       </SectionWrapper>
 

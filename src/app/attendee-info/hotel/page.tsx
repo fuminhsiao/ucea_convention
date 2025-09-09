@@ -102,55 +102,37 @@ export default function HotelTravelPage() {
   const mapCenter = { lat: 18.451, lng: -66.088 };
   const mapZoom = 15;
 
-type HotelBlockProps = {
-  name: string;
-  website: string;
-  reserveLink: string;
-  phone: string;
-  code: string;        // 代碼，例如 "G-UCEA"
-  details: string[];
-};
+  type HotelBlockProps = {
+    name: string;
+    website: string;
+    reserveLink: string;
+    phone: string;
+    details: React.ReactNode;
+  };
 
- const HotelBlock = ({
-  name,
-  website,
-  reserveLink,
-  phone,
-  code,
-  details,
-}: HotelBlockProps) => (
-  <div className="mt-8 first:mt-0">
-    <h3 className="font-bold text-xl text-black">{name}</h3>
-    <div className="text-base text-gray-700 mb-2">
-      <a
-        href={website}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-700 underline"
-      >
-        Visit Website
-      </a>
-    </div>
-    <ul className="list-disc pl-6 mt-2 text-base">
-      {details.map((item, idx) => (
-        <li key={idx}>{item}</li>
-      ))}
-      <li>
+  const HotelBlock = ({
+    name,
+    website,
+    reserveLink,
+    phone,
+    details,
+  }: HotelBlockProps) => (
+    <div className="mt-8 first:mt-0">
+      <h3 className="font-bold text-xl text-black">{name}</h3>
+      <div className="text-base text-gray-700 mb-2">
         <a
-          href={reserveLink}
+          href={website}
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-700 underline"
         >
-          Reserve your room
-        </a>{" "}
-        online or call <b>{phone}</b>. Use code{" "}
-        <b className="text-blue-700">{code}</b> in the Special Rates section
-        when booking online or when booking by phone.
-      </li>
-    </ul>
-  </div>
-);
+          Visit Website
+        </a>
+      </div>
+      <ul className="list-disc pl-6 mt-2 text-base">{details}</ul>
+    </div>
+  );
+
 
   return (
     <div className="w-full">
@@ -205,61 +187,152 @@ type HotelBlockProps = {
               target="_blank"
               className="text-blue-700 underline"
             >Reserve your room
-              
-              
+
+
             </a>{" "}
-           online or by calling <b>1-866-932-7269</b>. Use code <b>AEC</b> when
+            online or by calling <b>1-866-932-7269</b>. Use code <b>AEC</b> when
             booking by phone.{" "}
           </p>{" "}
         </SectionContent>{" "}
       </SectionWrapper>
 
       <SectionWrapper>
-  <SectionTitle>Additional Hotels with Group Rates</SectionTitle>
-  <SectionContent>
-    <HotelBlock
-      name="Hyatt House San Juan"
-      website="https://www.hyatt.com/hyatt-house/en-US/sjuxs-hyatt-house-san-juan"
-      reserveLink="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-house-san-juan/sjuxs?corp_id=G-UCEA"
-      phone="1-787-977-5000"
-      code="G-UCEA"
-      details={[
-        "King/Double: $209 (Total rate including taxes and fees $271.09)",
-        "Rate includes complimentary daily Full American Breakfast Buffet",
-        "Rooms available at group rate from November 18 through November 23",
-        "Contact the hotel directly to add room nights if you want to extend your reservation up to 3 days pre and post the dates above.",
-        "Reservations must be made by Monday, October 20, 2025",
-      ]}
-    />
-    <HotelBlock
-      name="Hyatt Place San Juan"
-      website="https://www.hyatt.com/hyatt-place/en-US/sjuzs-hyatt-place-san-juan"
-      reserveLink="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-place-san-juan-city-center/sjuzs?corp_id=G-UCEA"
-      phone="1-787-721-3000"
-      code="G-UCEA"
-      details={[
-        "King Double: $204 (Total rate including taxes and fees $264.61)",
-        "Rate includes complimentary daily Full American Breakfast Buffet",
-        "Rooms available at group rate from November 18 through November 23",
-        "Contact the hotel directly to add room nights if you want to extend your reservation up to 3 days pre and post the dates above.",
-        "Reservations must be made by Monday, October 25, 2025",
-      ]}
-    />
-    <HotelBlock
-      name="Aloft San Juan"
-      website="https://www.marriott.com/en-us/hotels/sjual-aloft-san-juan/overview/"
-      reserveLink="https://www.marriott.com/event-reservations/reservation-link.mi?id=1755113494944&key=GRP&app=resvlink"
-      phone="1-866-912-1011"
-      code="UOBUOBA"
-      details={[
-        "King/Double: $214 (Total rate including destination fee and taxes $259.34)",
-        "View the rate details when booking online to view destination fee details.",
-        "Rooms available at group rate from November 18 through November 23",
-        "Reservations must be made by Saturday, October 18, 2025",
-      ]}
-    />
-  </SectionContent>
-</SectionWrapper>
+        <SectionTitle>Additional Hotels with Group Rates</SectionTitle>
+        <SectionContent>
+          <HotelBlock
+            name="Hyatt House San Juan"
+            website="https://www.hyatt.com/hyatt-house/en-US/sjuxs-hyatt-house-san-juan"
+            reserveLink="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-house-san-juan/sjuxs?corp_id=G-UCEA"
+            phone="1-787-977-5000"
+            details={
+              <>
+                <li>
+                  King/Double: $209 (Total rate including taxes and fees $271.09)
+                </li>
+                <li>
+                  Rate includes complimentary daily Full American Breakfast Buffet
+                </li>
+                <li>
+                  Rooms available at group rate from November 18 through November 23
+                </li>
+                <li>
+                  Email Patricia Saldana at  <a
+                    href="mailto:patricia.saldana@hyatt.com"
+                    className="text-blue-700 underline"
+                  >patricia.saldana@hyatt.com</a> or Gabriela Baldaguez at  <a
+                    href="mailto:gabriela.baldaguez@hyatt.com"
+                    className="text-blue-700 underline"
+                  >gabriela.baldaguez@hyatt.com</a> if you want to extend your reservation up to 3 days pre and post the dates above.
+                </li>
+                <li>Reservations must be made by Monday, October 20, 2025</li>
+
+                <li>
+                  <a
+                    href="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-house-san-juan/sjuxs?corp_id=G-UCEA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-700 underline"
+                  >
+                    Reserve your room
+                  </a>{" "}
+                  online or call <b>1-787-977-5000</b>. Use code <b className="text-blue-700">G-UCEA</b> in the Special Rates
+                  section when booking online or when booking by phone.
+                </li>
+              </>
+            }
+          />
+
+
+          <HotelBlock
+            name="Hyatt Place San Juan"
+            website="https://www.hyatt.com/hyatt-place/en-US/sjuzs-hyatt-place-san-juan"
+            reserveLink="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-place-san-juan-city-center/sjuzs?corp_id=G-UCEA"
+            phone="1-787-721-3000"
+            details={
+              <>
+                <li>
+                  King Double: $204 (Total rate including taxes and fees $264.61)
+                </li>
+                <li>
+                  Rate includes complimentary daily Full American Breakfast Buffet
+                </li>
+                <li>
+                  Rooms available at group rate from November 18 through November 23
+                </li>
+                <li>
+                  Email Patricia Saldana at  <a
+                    href="mailto:patricia.saldana@hyatt.com"
+                    className="text-blue-700 underline"
+                  >patricia.saldana@hyatt.com</a> or Gabriela Baldaguez at  <a
+                    href="mailto:gabriela.baldaguez@hyatt.com"
+                    className="text-blue-700 underline"
+                  >gabriela.baldaguez@hyatt.com</a> if you want to extend your reservation up to 3 days pre and post the dates above.
+                </li>
+                <li>Reservations must be made by Monday, October 25, 2025</li>
+
+                <li>
+                  <a
+                    href="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-house-san-juan/sjuxs?corp_id=G-UCEA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-700 underline"
+                  >
+                    Reserve your room
+                  </a>{" "}
+                  online or call <b> 1-787-721-3000</b>. Use code <b className="text-blue-700">G-UCEA</b> in the Special Rates
+                  section when booking online or when booking by phone.
+                </li>
+              </>
+            }
+          />
+
+          <HotelBlock
+            name="Aloft San Juan"
+            website="https://www.marriott.com/en-us/hotels/sjual-aloft-san-juan/overview/"
+            reserveLink="https://www.marriott.com/event-reservations/reservation-link.mi?id=1755113494944&key=GRP&app=resvlink"
+            phone="1-866-912-1011"
+            details={
+              <>
+                <li>
+                  King/Double: $214 (Total rate including destination fee and taxes
+                  $259.34)
+                </li>
+                <li>
+                  View the rate details when booking online to view destination fee
+                  details.
+                </li>
+                <li>
+                  Rooms available at group rate from November 18 through November 23
+                </li>
+                <li>
+                  Email Celian Velez Diaz at  <a
+                    href="mailto:Celian.A.VelezDiaz@marriott.com"
+                    className="text-blue-700 underline"
+                  >Celian.A.VelezDiaz@marriott.com</a> if you want to extend your reservation up to 3 days pre and post the dates above.
+
+
+                </li>
+                <li>Reservations must be made by Saturday, October 18, 2025</li>
+                
+
+                <li>
+                  <a
+                    href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1755113494944&key=GRP&app=resvlink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-700 underline"
+                  >
+                    Reserve your room
+                  </a>{" "}
+                  online or call <b>1-866-912-1011</b>. Use code <b className="text-blue-700">UOBUOBA</b> in the Special Rates
+                  section when booking online or when booking by phone.
+                </li>
+              </>
+            }
+          />
+
+        </SectionContent>
+      </SectionWrapper>
 
 
       <SectionWrapper>

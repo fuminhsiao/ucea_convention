@@ -67,7 +67,8 @@ const Footer = () => {
             { label: "Hotel", href: "/attendee-info/hotel" },
             { label: "Registration", href: "/attendee-info/registration" },
             { label: "Schedule at a Glance", href: "/attendee-info/schedule" },
-            { label: "Convention Program", href: "/attendee-info/program" },
+            { label: "Program", href: "/attendee-info/program" },
+            { label: "INTL Graduate Students", href: "/attendee-info/international-attendee" },
             { label: "Presenter Tips", href: "/attendee-info/presenter-tips" },
             { label: "Facilitator Tips", href: "/attendee-info/facilitator-tips" },
           ]}

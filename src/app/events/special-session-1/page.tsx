@@ -13,7 +13,7 @@ const sessionDate = {
 };
 
 const pdfUrl =
-  "https://www.ucea.org/docs/UCEA_Convention_Capacity_Building_for_Communication_090425.pdf";
+  "https://www.ucea.org/docs/UCEA_Convention_Capacity_Building_for_Communication_090925.pdf";
 const downloadText = "📄 Download Full PDF";
 
 const sessions = [
@@ -53,15 +53,7 @@ const sessions = [
     photo: "https://ucea.org/photos/UCEA1757085461_David_DeMatthews.jpg",
     bio: "David DeMatthews is the W.K. Kellogg Endowed Professor in the Department of Educational Leadership and Policy at The University of Texas at Austin. His research focuses on district and school leadership, particularly in relation to student inclusion and equity, as well as superintendent/principal stress and turnover.",
   },
-  {
-    title: "Fighting Back—Responding to Crisis and Slander on Social Media",
-    description:
-      "This session offers strategies for navigating disinformation and online attacks while fostering resilience and community trust. Based on real experiences, it equips leaders to respond effectively without compromising core values.",
-    facilitator: "Rosa Rivera-McCutchen, CUNY Hunter College",
-    photo: "https://ucea.org/photos/UCEA1757085462_Rosa_Rivera-McCutchen.png",
-    bio: "Rosa Rivera-McCutchen is a Professor of Administration & Supervision at CUNY Hunter College. Her research centers urban school leaders who enact 'radical care' by foregrounding antiracism and equity. She draws on her own experiences in NYC public schools as both student and educator.",
-  },
-  {
+   {
     title:
       "Scholarship in Action: Crafting Research Conversations With Practitioners",
     description:
@@ -76,6 +68,15 @@ const sessions = [
       "Decoteau J. Irby is a professor at the University of Illinois Chicago and leads the Brothers Teaching Initiative. His work advances equity in education for Black and Brown youth through leadership, scholarship, and practitioner partnerships.",
     ],
   },
+  {
+    title: "Fighting Back—Responding to Crisis and Slander on Social Media",
+    description:
+      "This session offers strategies for navigating disinformation and online attacks while fostering resilience and community trust. Based on real experiences, it equips leaders to respond effectively without compromising core values.",
+    facilitator: "Rosa Rivera-McCutchen, CUNY Hunter College",
+    photo: "https://ucea.org/photos/UCEA1757085462_Rosa_Rivera-McCutchen.png",
+    bio: "Rosa Rivera-McCutchen is a Professor of Administration & Supervision at CUNY Hunter College. Her research centers urban school leaders who enact 'radical care' by foregrounding antiracism and equity. She draws on her own experiences in NYC public schools as both student and educator.",
+  },
+ 
 ];
 
 export default function CapacityBuildingSchedule() {

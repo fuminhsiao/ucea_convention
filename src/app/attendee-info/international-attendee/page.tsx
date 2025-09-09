@@ -9,12 +9,12 @@ export default function InternationalPage() {
   return (
     <div className="w-full">
       <PageHeader />
-      <PageTitle title="International Attendees" />
+      <PageTitle title=" International Graduate Students from U.S. Universities" />
 
       <SectionWrapper>
         <SectionContent>
           <p className=" text-gray-800">
-            Puerto Rico is a territory of the United States. Thus, this is a <strong className="text-blue-700">domestic travel destination</strong> and international students in{" "}
+            Puerto Rico is a territory of the United States. Thus, this is a domestic travel destination for <em>international students who are studying at U.S. universities</em>. International students in{" "}
             <strong className="text-red-600">F-1 status</strong> should be able to travel to this year’s convention{" "}
             <strong className="text-blue-700">without a visa</strong>. However, you must carry{" "}
             <strong className="text-blue-700">immigration documents</strong> (like passports).

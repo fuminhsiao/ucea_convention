@@ -38,8 +38,7 @@ const navStructure = [
       { label: "Registration", href: "/attendee-info/registration" },
       { label: "Schedule at a Glance", href: "/attendee-info/schedule" },
       { label: "Program", href: "/attendee-info/program" },
-            { label: "International Attendee", href: "/attendee-info/international-attendee" },
-
+      { label: "INTL Graduate Students", href: "/attendee-info/international-attendee" },
       { label: "Presenter Tips", href: "/attendee-info/presenter-tips" },
       { label: "Facilitator Tips", href: "/attendee-info/facilitator-tips" },
     ],

@@ -272,7 +272,7 @@ export default function HotelTravelPage() {
 
                 <li>
                   <a
-                    href="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-house-san-juan/sjuxs?corp_id=G-UCEA"
+                    href="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-place-san-juan-city-center/sjuzs?corp_id=G-UCEA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-700 underline"
@@ -304,14 +304,7 @@ export default function HotelTravelPage() {
                 <li>
                   Rooms available at group rate from November 18 through November 23
                 </li>
-                <li>
-                  Email Celian Velez Diaz at  <a
-                    href="mailto:Celian.A.VelezDiaz@marriott.com"
-                    className="text-blue-700 underline"
-                  >Celian.A.VelezDiaz@marriott.com</a> if you want to extend your reservation up to 3 days pre and post the dates above.
-
-
-                </li>
+                
                 <li>Reservations must be made by Saturday, October 18, 2025</li>
                 
 

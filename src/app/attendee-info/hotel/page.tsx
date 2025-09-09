@@ -105,16 +105,14 @@ export default function HotelTravelPage() {
   type HotelBlockProps = {
     name: string;
     website: string;
-    reserveLink: string;
-    phone: string;
+
     details: React.ReactNode;
   };
 
   const HotelBlock = ({
     name,
     website,
-    reserveLink,
-    phone,
+
     details,
   }: HotelBlockProps) => (
     <div className="mt-8 first:mt-0">
@@ -202,8 +200,7 @@ export default function HotelTravelPage() {
           <HotelBlock
             name="Hyatt House San Juan"
             website="https://www.hyatt.com/hyatt-house/en-US/sjuxs-hyatt-house-san-juan"
-            reserveLink="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-house-san-juan/sjuxs?corp_id=G-UCEA"
-            phone="1-787-977-5000"
+
             details={
               <>
                 <li>
@@ -246,8 +243,7 @@ export default function HotelTravelPage() {
           <HotelBlock
             name="Hyatt Place San Juan"
             website="https://www.hyatt.com/hyatt-place/en-US/sjuzs-hyatt-place-san-juan"
-            reserveLink="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-place-san-juan-city-center/sjuzs?corp_id=G-UCEA"
-            phone="1-787-721-3000"
+
             details={
               <>
                 <li>
@@ -272,7 +268,7 @@ export default function HotelTravelPage() {
 
                 <li>
                   <a
-                    href="https://www.hyatt.com/en-US/hotel/puerto-rico/hyatt-place-san-juan-city-center/sjuzs?corp_id=G-UCEA"
+                    href="https://www.hyatt.com/hyatt-place/en-US/sjuzs-hyatt-place-san-juan?corp_id=G-UCEA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-700 underline"
@@ -289,8 +285,7 @@ export default function HotelTravelPage() {
           <HotelBlock
             name="Aloft San Juan"
             website="https://www.marriott.com/en-us/hotels/sjual-aloft-san-juan/overview/"
-            reserveLink="https://www.marriott.com/event-reservations/reservation-link.mi?id=1755113494944&key=GRP&app=resvlink"
-            phone="1-866-912-1011"
+
             details={
               <>
                 <li>
@@ -304,9 +299,16 @@ export default function HotelTravelPage() {
                 <li>
                   Rooms available at group rate from November 18 through November 23
                 </li>
-                
+                                <li>
+                  Email Celian Velez Diaz at  <a
+                    href="mailto:Celian.A.VelezDiaz@marriott.com"
+                    className="text-blue-700 underline"
+                  >Celian.A.VelezDiaz@marriott.com</a> if you want to extend your reservation up to 3 days pre and post the dates above.
+
+
+                </li>
                 <li>Reservations must be made by Saturday, October 18, 2025</li>
-                
+
 
                 <li>
                   <a

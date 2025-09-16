@@ -53,7 +53,7 @@ const sessions = [
     photo: "https://ucea.org/photos/UCEA1757085461_David_DeMatthews.jpg",
     bio: "David DeMatthews is the W.K. Kellogg Endowed Professor in the Department of Educational Leadership and Policy at The University of Texas at Austin. His research focuses on district and school leadership, particularly in relation to student inclusion and equity, as well as superintendent/principal stress and turnover.",
   },
-   {
+  {
     title:
       "Scholarship in Action: Crafting Research Conversations With Practitioners",
     description:
@@ -76,7 +76,6 @@ const sessions = [
     photo: "https://ucea.org/photos/UCEA1757085462_Rosa_Rivera-McCutchen.png",
     bio: "Rosa Rivera-McCutchen is a Professor of Administration & Supervision at CUNY Hunter College. Her research centers urban school leaders who enact 'radical care' by foregrounding antiracism and equity. She draws on her own experiences in NYC public schools as both student and educator.",
   },
- 
 ];
 
 export default function CapacityBuildingSchedule() {
@@ -86,7 +85,17 @@ export default function CapacityBuildingSchedule() {
       <PageTitle title="Capacity-Building for Communication & Engagement" />
       <SectionWrapper>
         <SectionContent>
-          This year’s convention includes six capacity-building sessions designed to help participants develop tangible communication and advocacy skills. Join us Saturday morning for interactive, hands-on workshops led by scholar-practitioners.
+          In the UCEA Call for Proposals, the Convention planning team
+          communicated our intention to offer Convention experiences that build
+          communication and advocacy skills. To deliver on this intention, we
+          have converted one of this year's four general into a small set of
+          capacity-building sessions. These sessions are intended to be
+          instructive, interactive, and hands-on with a goal of building a
+          specific communication capacity. These sessions will occur on
+          Saturday, November 22 from 9:20–10:30 am. Each session will be located
+          in a separate room. All UCEA convention participants will have the
+          ability to select one of these sessions to join on Saturday morning.
+          Please mark your calendars now and join us on Saturday morning!
         </SectionContent>
       </SectionWrapper>
 
@@ -154,7 +163,8 @@ export default function CapacityBuildingSchedule() {
                   ))
                 ) : (
                   <p className="text-sm text-gray-700">
-                    <span className="font-semibold">{s.facilitator}:</span> {s.bio}
+                    <span className="font-semibold">{s.facilitator}:</span>{" "}
+                    {s.bio}
                   </p>
                 )}
               </li>

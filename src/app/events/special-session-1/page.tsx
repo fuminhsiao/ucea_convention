@@ -88,7 +88,7 @@ export default function CapacityBuildingSchedule() {
           In the UCEA Call for Proposals, the Convention planning team
           communicated our intention to offer Convention experiences that build
           communication and advocacy skills. To deliver on this intention, we
-          have converted one of this year's four general into a small set of
+          have converted one of this year&apos;s four general into a small set of
           capacity-building sessions. These sessions are intended to be
           instructive, interactive, and hands-on with a goal of building a
           specific communication capacity. These sessions will occur on

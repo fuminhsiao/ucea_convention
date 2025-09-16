@@ -92,7 +92,7 @@ export default function CapacityBuildingSchedule() {
           capacity-building sessions. These sessions are intended to be
           instructive, interactive, and hands-on with a goal of building a
           specific communication capacity. These sessions will occur on
-          Saturday, November 22 from 9:20–10:30 am. Each session will be located
+          Saturday, November 22 from 9:20-10:30 am. Each session will be located
           in a separate room. All UCEA convention participants will have the
           ability to select one of these sessions to join on Saturday morning.
           Please mark your calendars now and join us on Saturday morning!

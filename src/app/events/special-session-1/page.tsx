@@ -13,7 +13,7 @@ const sessionDate = {
 };
 
 const pdfUrl =
-  "https://www.ucea.org/docs/UCEA_Convention_Capacity_Building_for_Communication_090925.pdf";
+  "https://www.ucea.org/docs/Capacity_Building_for_Communication_092325.pdf";
 const downloadText = "📄 Download Full PDF";
 
 const sessions = [
@@ -88,13 +88,13 @@ export default function CapacityBuildingSchedule() {
           In the UCEA Call for Proposals, the Convention planning team
           communicated our intention to offer Convention experiences that build
           communication and advocacy skills. To deliver on this intention, we
-          have converted one of this year&apos;s four general into a small set of
-          capacity-building sessions. These sessions are intended to be
+          have converted one of this year&apos;s four general sessuibs into a small set of
+          capacity-building workshops. These sessions are intended to be
           instructive, interactive, and hands-on with a goal of building a
           specific communication capacity. These sessions will occur on
-          Saturday, November 22 from 9:20-10:30 am. Each session will be located
+          Saturday, November 22 from 9:20-10:30 am. Each workshop will be located
           in a separate room. All UCEA convention participants will have the
-          ability to select one of these sessions to join on Saturday morning.
+          ability to select one of these workshops to join on Saturday morning.
           Please mark your calendars now and join us on Saturday morning!
         </SectionContent>
       </SectionWrapper>

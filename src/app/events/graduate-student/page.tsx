@@ -20,14 +20,14 @@ export default function GraduateStudentSummitPage() {
         <SectionContent>
           <p className="leading-relaxed mb-6">
             Hello Jackson Scholars and Graduate Student Summit Participants! The UCEA Convention Planning Team along with UCEA Associate Directors for Graduate Student Development are excited to welcome you to this year’s UCEA Convention in San Juan in November. You should plan to arrive in San Juan by late afternoon{" "}
-            <strong>Wednesday, November 20th</strong> so that you can participate in various activities that begin at 5pm on Wednesday. As the{" "}
+            <strong>Wednesday, November 19th</strong> so that you can participate in various activities that begin at 5pm on Wednesday. As the{" "}
             <a
               href="/attendee-info/schedule"
               className="text-blue-600 underline font-semibold"
             >
               Schedule-At-A-Glance
             </a>{" "}
-            reveals, both the Graduate Student Summit and the Jackson Scholars Network have activities beginning on Wednesday evening followed by breakfast on Thursday, November 21. This year’s Graduate Student Summit will occur concurrently with the UCEA Convention rather than in a preconvention format. Thus, Graduate Student Summit sessions will be scheduled on Thursday through Saturday. Jackson Scholars programming will conclude with a Recognition Ceremony and Reception on Friday evening.
+            reveals, both the Graduate Student Summit and the Jackson Scholars Network have activities beginning on Wednesday evening followed by breakfast on Thursday, November 20. This year’s Graduate Student Summit will occur concurrently with the UCEA Convention rather than in a preconvention format. Thus, Graduate Student Summit sessions will be scheduled on Thursday through Saturday. Jackson Scholars programming will conclude with a Recognition Ceremony and Reception on Friday evening.
           </p>
 
           <p className="leading-relaxed mb-6">

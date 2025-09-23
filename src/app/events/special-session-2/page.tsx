@@ -38,7 +38,7 @@ const sessions = [
     ],
     bio: [
       "Katherine C. Rodela is associate professor and department chair at Washington State University. Her research centers family, youth, and community voices to advance equity and justice in PK–20 education.",
-      'Rudolfo “Rudy” David Rodela Duncan is a ninth-grade student leader in Portland Public Schools. He created the district’s first elementary youth-led group and serves as cochair of the district’s Racial Equity and Social Justice Community Advisory Committee.',
+      "Rudolfo “Rudy” David Rodela Duncan is a ninth-grade student leader in Portland Public Schools. He created the district’s first elementary youth-led group and serves as cochair of the district’s Racial Equity and Social Justice Community Advisory Committee.",
     ],
   },
   {
@@ -76,13 +76,27 @@ export default function ResilienceFocusedSchedule() {
       <PageTitle title="Resilience-Focused Capacity-Building Workshops" />
       <SectionWrapper>
         <SectionContent>
-          This year’s Convention is being designed as a space for research
-          presentations and for participant learning and capacity-building.
-          These invited workshops focus on building resilience through community
-          partnerships, intergenerational leadership, and education policy
-          reform. Each session is interactive, hands-on, and spread across
-          Friday and Saturday to allow for multiple workshop opportunities.
+          As part of this year’s commitment to resilience-building, this session
+          examines how research–practice partnerships can strengthen both
+          scholarship and educational equity. Facilitated by an experienced
+          scholar–practitioner, the workshop explores strategies for fostering
+          trust and shared goals while navigating institutional challenges and
+          political tensions—especially around contested topics such as LGBTQ+
+          inclusion. Participants will leave with practical tools for initiating
+          and sustaining meaningful partnerships that support both scholarly
+          rigor and community needs.
+                    <div className="mt-10">
+            <a
+              href={pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#1e3a8a] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#3355aa] transition-colors duration-300"
+            >
+              {downloadText}
+            </a>
+          </div>
         </SectionContent>
+        
       </SectionWrapper>
 
       {sessionDates.map((session, idx) => (
@@ -156,16 +170,7 @@ export default function ResilienceFocusedSchedule() {
             ))}
           </ul>
 
-          <div className="mt-10">
-            <a
-              href={pdfUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#1e3a8a] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#3355aa] transition-colors duration-300"
-            >
-              {downloadText}
-            </a>
-          </div>
+
         </SectionContent>
       </SectionWrapper>
     </div>

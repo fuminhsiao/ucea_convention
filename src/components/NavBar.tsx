@@ -27,7 +27,10 @@ const navStructure = [
       { label: "Call for Proposals", href: "/cfp/2025" },
       { label: "Session Types", href: "/cfp/session-types" },
       { label: "Submission Guidelines", href: "/cfp/submission-details" },
-      { label: "How to Submit a Strong Proposal", href: "/cfp/strong-proposal" },
+      {
+        label: "How to Submit a Strong Proposal",
+        href: "/cfp/strong-proposal",
+      },
       { label: "Proposal Reviews", href: "/cfp/proposal-reviews" },
     ],
   },
@@ -38,7 +41,10 @@ const navStructure = [
       { label: "Registration", href: "/attendee-info/registration" },
       { label: "Schedule at a Glance", href: "/attendee-info/schedule" },
       { label: "Program", href: "/attendee-info/program" },
-      { label: "INTL Graduate Students", href: "/attendee-info/international-attendee" },
+      {
+        label: "INTL Graduate Students",
+        href: "/attendee-info/international-attendee",
+      },
       { label: "Presenter Tips", href: "/attendee-info/presenter-tips" },
       { label: "Facilitator Tips", href: "/attendee-info/facilitator-tips" },
     ],
@@ -52,17 +58,32 @@ const navStructure = [
       { label: "Graduate Students", href: "/events/graduate-student" },
 
       { label: "UCEA-Wallace Symposium", href: "/events/wallace-symposium" },
-      { label: "Capacity-Building for Communication & Engagement", href: "/events/special-session-1" },
-      { label: "Resilience-Focused Capacity-Building Workshops", href: "/events/special-session-2" },
-
+      {
+        label: "Capacity-Building for Communication & Engagement",
+        href: "/events/special-session-1",
+      },
+      {
+        label: "Resilience-Focused Capacity-Building Workshops",
+        href: "/events/special-session-2",
+      },
+      {
+        label: "Policy and Politics Workshop",
+        href: "/events/special-session-3",
+      },
     ],
   },
   {
     label: "SPONSOR/EXHIBIT",
     items: [
-      { label: "Become a Sponsor", href: "/sponsors-exhibitors/become-a-sponsor" },
+      {
+        label: "Become a Sponsor",
+        href: "/sponsors-exhibitors/become-a-sponsor",
+      },
       { label: "Sponsors", href: "/sponsors-exhibitors/sponsors" },
-      { label: "Become an Exhibitor", href: "/sponsors-exhibitors/become-an-exhibitor" },
+      {
+        label: "Become an Exhibitor",
+        href: "/sponsors-exhibitors/become-an-exhibitor",
+      },
       { label: "Exhibitors", href: "/sponsors-exhibitors/exhibitors" },
     ],
   },
@@ -72,7 +93,9 @@ const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
+  const [activeMobileDropdown, setActiveMobileDropdown] = useState<
+    string | null
+  >(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -101,7 +124,9 @@ const NavBar = () => {
             src={scrolled ? logoDefault : logoLarge}
             alt="UCEA Logo"
             sizes="(max-width: 768px) 100vw, 50vw"
-            className={`transition-all duration-500 ease-in-out ${scrolled ? "h-20" : "h-24"} w-auto`}
+            className={`transition-all duration-500 ease-in-out ${
+              scrolled ? "h-20" : "h-24"
+            } w-auto`}
           />
         </Link>
 
@@ -132,12 +157,11 @@ const NavBar = () => {
           </ul>
           {/* REGISTER BUTTON */}
           <Link href="/attendee-info/registration">
-            <button className="ml-4 px-5 py-2  text-white font-semibold rounded-md border-2 border-white hover:bg-[#3366cc] hover:text-white transition cursor-pointer" >
+            <button className="ml-4 px-5 py-2  text-white font-semibold rounded-md border-2 border-white hover:bg-[#3366cc] hover:text-white transition cursor-pointer">
               REGISTER
             </button>
           </Link>
         </div>
-
       </div>
 
       {/* Mobile Menu */}

@@ -96,7 +96,18 @@ export default function CapacityBuildingSchedule() {
           in a separate room. All UCEA convention participants will have the
           ability to select one of these workshops to join on Saturday morning.
           Please mark your calendars now and join us on Saturday morning!
+          <div className="mt-10">
+            <a
+              href={pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#1e3a8a] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#3355aa] transition-colors duration-300"
+            >
+              {downloadText}
+            </a>
+          </div>
         </SectionContent>
+
       </SectionWrapper>
 
       <SectionWrapper>
@@ -113,14 +124,9 @@ export default function CapacityBuildingSchedule() {
                   className="text-base md:text-lg text-gray-800 pl-2 relative before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-2 before:h-2 before:rounded-full before:bg-blue-600 before:-translate-x-4"
                 >
                   <span className="font-medium">{time} | </span>
-                  <a
-                    href={pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline text-blue-600 hover:text-blue-800"
-                  >
+                  
                     {content}
-                  </a>
+                  
                 </li>
               );
             })}
@@ -171,16 +177,7 @@ export default function CapacityBuildingSchedule() {
             ))}
           </ul>
 
-          <div className="mt-10">
-            <a
-              href={pdfUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#1e3a8a] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#3355aa] transition-colors duration-300"
-            >
-              {downloadText}
-            </a>
-          </div>
+          
         </SectionContent>
       </SectionWrapper>
     </div>

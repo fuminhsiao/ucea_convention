@@ -53,6 +53,8 @@ const navStructure = [
 
       { label: "UCEA-Wallace Symposium", href: "/events/wallace-symposium" },
       { label: "Capacity-Building for Communication & Engagement", href: "/events/special-session-1" },
+      { label: "Resilience-Focused Capacity-Building Workshops", href: "/events/special-session-2" },
+
     ],
   },
   {

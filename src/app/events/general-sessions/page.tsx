@@ -18,9 +18,7 @@ export default function GeneralSessionsPage() {
 
       <SectionWrapper>
         <SectionContent>
-          <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-6">
-           Sessions
-          </h3>
+
           <BioBlock
             name={`UCEA25 Opening General Session: 
 From Colonial Legacies to Collaborative Leadership: Policy Change and Resilience in Puerto Rico’s Schools`}

@@ -8,7 +8,7 @@ import clsx from "clsx";
 interface BioBlockProps {
   name: string;
   position: string;
-  description: React.ReactNode;
+  description: React.ReactNode; 
   imageUrl: string;
   reverse?: boolean;
   variant?: "default" | "narrow";
@@ -92,27 +92,49 @@ export default function BioBlock({
           {position}
         </h3>
 
-        {/* description */}
-        <div
-          className={clsx(
-            "leading-relaxed",
-            variant === "default" ? "text-lg md:text-2xl" : "text-xl md:text-3xl"
-          )}
+        {/* description with expand/collapse */}
+        <motion.div
+          animate={{ height: expanded ? "auto" : 160 }} // 預設截斷高度
+          initial={false}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className="overflow-hidden"
         >
-          {description}
-        </div>
+          <div
+            className={clsx(
+              "leading-relaxed",
+              variant === "default"
+                ? "text-lg md:text-2xl"
+                : "text-xl md:text-3xl"
+            )}
+          >
+            {description}
+          </div>
+        </motion.div>
 
-        {/* READ MORE / PDF Link */}
-        {variant === "narrow" && readMoreLink ? (
+        {/* READ MORE or PDF link */}
+        {readMoreLink ? (
           <a
             href={readMoreLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer flex justify-end text-blue-600 hover:underline mt-2 text-xl md:text-2xl"
+            className={clsx(
+              "flex justify-end text-blue-600 hover:underline mt-2",
+              variant === "default" ? "text-lg md:text-xl" : "text-xl md:text-2xl"
+            )}
           >
             READ MORE
           </a>
-        ) : null}
+        ) : (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className={clsx(
+              "cursor-pointer flex justify-end text-blue-600 hover:underline mt-2",
+              variant === "default" ? "text-lg md:text-xl" : "text-xl md:text-2xl"
+            )}
+          >
+            {expanded ? "Read Less" : "READ MORE"}
+          </button>
+        )}
       </motion.div>
     </motion.div>
   );

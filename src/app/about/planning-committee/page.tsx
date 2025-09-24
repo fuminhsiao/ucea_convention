@@ -3,6 +3,7 @@ import PageHeader from "@/components/ui/general/PageHeader";
 import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
+import { Variable } from "lucide-react";
 
 const bios = [
     {
@@ -11,6 +12,8 @@ const bios = [
         description:
             "SHELBY COSNER is the Morrill M. Hall Endowed Chair in Educational Administration at the University of Georgia, Mary Frances Early College of Education, the Educational Administration and Policy program. Cosner is an expert on the capacity-building and improvement-oriented work of school leaders, the preparation and development of educational leaders, the continuous improvement and evaluation of preparation/development programs for educational leaders. She examines these issues more generally as well as for a variety of equity-oriented aims. She leads multi- disciplinary teams that design and test (e.g., randomized control trial, cluster randomized trial) learning designs for teachers, teacher leaders, school leaders, and district leaders. She also is an expert in partnerships including university-district partnerships, research practice partnerships, and public private partnerships. She has extensive experience with and passion for cultivating these sorts of partnerships in settings throughout the US and abroad. Working independently and with various colleagues Cosner (PI or Co-PI) has obtained over 16M in external funding from federal organizations to state and national/international foundations (e.g., National Science Foundation/NSF, US Department of Education, The Wallace Foundation, William T. Grant Foundation, Jeff Bezos Family Foundation, McCormick Foundation, Lyle Spencer Foundation, Broad Foundation, Lloyd A. Fry Foundation, Finnegan Family Foundation, Children’s First Foundation, Chicago Public Education Fund, and the Qatar Foundation). Her work appears in a variety of peer-reviewed journals including Educational Administration Quarterly, the Journal of Educational Administration, the Journal of School Leadership, Leadership and Policy in Schools, Urban Education, Education Sciences, Educational Management Administration and Leadership, the Journal of Research on Leadership Education, and Planning and Changing. She is currently working on a book for Harvard Education Press for publication in 2025 that examines the continuous improvement of educational leader preparation programs. Cosner is currently serving in several elected national leadership roles in the US. She is the president-elect for the University Council for Educational Administration (UCEA) for 2024-2025 and will become the organization’s president in 2025. She is also the Chair for the AERA Special Interest Group, Learning and Teaching in Educational Leadership (LTEL).",
         imageUrl: "/assets/SHELBY.png",
+        variant: "default",
+        
     },
     {
         name: "Kaneshia Dorsan",

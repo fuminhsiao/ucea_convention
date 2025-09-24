@@ -100,7 +100,7 @@ const Footer = () => {
         />
 
         <FooterColumn
-          title="Convention Highlights"
+          title="Events"
           links={[
             { label: "General Sessions", href: "/events/general-sessions" },
             { label: "Awards Luncheon", href: "/events/awards-luncheon" },
@@ -119,7 +119,7 @@ const Footer = () => {
               href: "/events/special-session-2",
             },
             {
-              label: "Policy and Politics Workshop",
+              label: "Politics and Policy in PR",
               href: "/events/special-session-3",
             },
           ]}

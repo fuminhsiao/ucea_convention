@@ -95,7 +95,6 @@ export default function ResilienceFocusedSchedule() {
           public partnerships, and policy recommendations. Participants will
           gain insights into the broader implications for educational equity and
           governance nationwide.
-          {/* Download Button at bottom */}
           <div className="mt-10">
             <a
               href={pdfUrl}
@@ -108,7 +107,6 @@ export default function ResilienceFocusedSchedule() {
           </div>
         </SectionContent>
       </SectionWrapper>
-      
 
       {sessionDates.map((session, idx) => (
         <SectionWrapper key={idx}>
@@ -130,77 +128,66 @@ export default function ResilienceFocusedSchedule() {
                 );
               })}
             </ul>
-            
-          
           </SectionContent>
         </SectionWrapper>
       ))}
 
       <SectionWrapper>
-        
         <SectionContent>
           <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-6">
             Featured Workshop Sessions
           </h3>
-
-          <ul className="space-y-14">
+          <ul className="space-y-10">
             {sessions.map((s, index) => (
               <li key={index} className="text-base md:text-lg text-gray-900">
                 <p className="font-bold text-lg mb-1">{s.title}</p>
-                <p className="italic mb-3 whitespace-pre-line">
-                  {s.description}
-                </p>
+                <p className="italic mb-4 whitespace-pre-line">{s.description}</p>
 
-                {/* Facilitators */}
-                {s.photo &&
-                  !s.panelists &&
-                  (Array.isArray(s.photo) ? (
-                    <div className="flex flex-col md:flex-row gap-6 mb-3">
-                      {s.photo.map((src, i) => (
+                {/* Facilitator */}
+                {Array.isArray(s.photo)
+                  ? s.photo.map((src, i) => (
+                      <div key={i} className="flex gap-4 items-start mb-4">
                         <img
-                          key={i}
                           src={src}
-                          alt={s.facilitator?.split(", ")[i]}
+                          alt={s.facilitator.split(", ")[i]}
                           className="w-36 h-36 object-cover rounded shadow"
                         />
-                      ))}
-                    </div>
-                  ) : (
-                    <img
-                      src={s.photo}
-                      alt={s.facilitator}
-                      className="w-36 h-36 object-cover rounded shadow mb-3"
-                    />
-                  ))}
-
-                {/* Bios */}
-                {s.bio &&
-                  !s.panelists &&
-                  (Array.isArray(s.bio) ? (
-                    s.bio.map((b, i) => (
-                      <p key={i} className="text-sm text-gray-700 mb-2">
-                        <span className="font-semibold">
-                          {s.facilitator.split(", ")[i]}:
-                        </span>{" "}
-                        {b}
-                      </p>
+                        <div>
+                          <p className="font-semibold">
+                            {s.facilitator.split(", ")[i]}
+                          </p>
+                          {Array.isArray(s.bio) && (
+                            <p className="text-sm text-gray-700 mt-1">
+                              {s.bio[i]}
+                            </p>
+                          )}
+                        </div>
+                      </div>
                     ))
-                  ) : (
-                    <p className="text-sm text-gray-700 mb-3">
-                      <span className="font-semibold">{s.facilitator}:</span>{" "}
-                      {s.bio}
-                    </p>
-                  ))}
+                  : (
+                    <div className="flex flex-col md:flex-row gap-6 mb-3">
+                      <img
+                        src={s.photo}
+                        alt={s.facilitator}
+                        className="w-36 h-36 object-cover rounded shadow mb-3"
+                      />
+                      <div>
+                        <p className="font-semibold">{s.facilitator}</p>
+                        <p className="text-sm text-gray-700 mt-1">{s.bio}</p>
+                      </div>
+                    </div>
+                  )}
 
-                {/* Panelists (e.g., Special Session 3) */}
+                {/* Panelists */}
                 {s.panelists && (
-                  <div className="mt-4 space-y-6">
+                  <div className="mt-6 space-y-6">
+                    <span className="font-semibold block mb-2">Panelists</span>
                     {s.panelists.map((p, idx) => (
                       <div key={idx} className="flex gap-4 items-start">
                         <img
                           src={p.photo}
                           alt={p.name}
-                          className="w-24 h-24 object-cover rounded shadow"
+                          className="w-36 h-36 object-cover rounded shadow"
                         />
                         <div>
                           <p className="font-semibold">{p.name}</p>
@@ -214,7 +201,6 @@ export default function ResilienceFocusedSchedule() {
               </li>
             ))}
           </ul>
-
         </SectionContent>
       </SectionWrapper>
     </div>

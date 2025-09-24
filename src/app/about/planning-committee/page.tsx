@@ -3,7 +3,6 @@ import PageHeader from "@/components/ui/general/PageHeader";
 import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
-import { Variable } from "lucide-react";
 
 const bios = [
     {

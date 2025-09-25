@@ -5,25 +5,25 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 
-interface BioBlockProps {
+interface SessionBlockProps {
+  sessionType: string;
+  sessionName: React.ReactNode;
   name: string;
-  position: string;
-  description: React.ReactNode; 
+  description: React.ReactNode;
   imageUrl: string;
-  reverse?: boolean;
-  variant?: "default" | "narrow";
   readMoreLink?: string;
+  reverse?: boolean;
 }
 
-export default function BioBlock({
+export default function SessionBlock({
+  sessionType,
+  sessionName,
   name,
-  position,
   description,
   imageUrl,
-  reverse = false,
-  variant = "default",
   readMoreLink,
-}: BioBlockProps) {
+  reverse = false,
+}: SessionBlockProps) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -34,7 +34,7 @@ export default function BioBlock({
       viewport={{ once: true }}
       className="w-full bg-white shadow-lg mx-auto my-8 p-8 flex flex-col xl:flex-row items-center md:items-stretch gap-10 md:gap-20"
     >
-      {/* 圖片 */}
+      {/* 圖片區塊 */}
       <motion.div
         initial={{ opacity: 0, x: reverse ? 100 : -100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -43,15 +43,10 @@ export default function BioBlock({
         className={clsx(
           "flex justify-center",
           reverse && "md:order-last",
-          variant === "default" ? "w-full xl:w-3/12" : "w-full xl:w-4/12"
+          "w-full xl:w-4/12"
         )}
       >
-        <div
-          className={clsx(
-            "relative",
-            variant === "default" ? "w-80 h-80" : "w-100 h-[28rem]"
-          )}
-        >
+        <div className="relative w-100 h-[28rem]">
           <Image
             src={imageUrl}
             alt={name}
@@ -62,75 +57,51 @@ export default function BioBlock({
         </div>
       </motion.div>
 
-      {/* 文字 */}
+      {/* 文字區塊 */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
-        className={clsx(
-          "flex flex-col  justify-center text-black text-left px-2 md:px-6",
-          variant === "default" ? "w-full xl:w-9/12" : "w-full xl:w-8/12"
-        )}
+        className="flex flex-col justify-center text-black text-left px-2 md:px-6 w-full xl:w-8/12"
       >
-        <h2
-          className={clsx(
-            "font-bold mb-2",
-            variant === "default"
-              ? "text-3xl md:text-4xl"
-              : "text-4xl md:text-3xl"
-          )}
-        >
+        {/* Session Type 標籤 */}
+        <div className="text-xl w-fit text-white bg-[#00334e]  inline-block px-3 py-1 rounded-full mb-3">
+          {sessionType}
+        </div>
+
+        {/* Session Name */}
+        <h2 className="font-bold mb-2 text-4xl md:text-3xl">{sessionName}</h2>
+
+        {/* 講者姓名 */}
+        <h3 className="text-[#3366cc] mb-4 text-2xl md:text-4xl font-bold">
           {name}
-        </h2>
-        <h3
-          className={clsx(
-            "text-gray-600 mb-4",
-            variant === "default" ? "text-xl md:text-2xl" : "text-2xl md:text-4xl font-bold"
-          )}
-        >
-          {position}
         </h3>
 
-        {/* description with expand/collapse */}
+        {/* 展開式描述區塊 */}
         <motion.div
-          animate={{ height: expanded ? "auto" : 160 }} // 預設截斷高度
+          animate={{ height: expanded ? "auto" : 160 }}
           initial={false}
           transition={{ duration: 0.4, ease: "easeInOut" }}
           className="overflow-hidden"
         >
-          <div
-            className={clsx(
-              "leading-relaxed",
-              variant === "default"
-                ? "text-lg md:text-2xl"
-                : "text-xl md:text-3xl"
-            )}
-          >
-            {description}
-          </div>
+          <div className="leading-relaxed text-xl md:text-2xl font-bold ">{description}</div>
         </motion.div>
 
-        {/* READ MORE or PDF link */}
+        {/* READ MORE / PDF 連結 */}
         {readMoreLink ? (
           <a
             href={readMoreLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={clsx(
-              "flex justify-end text-blue-600 hover:underline mt-2",
-              variant === "default" ? "text-lg md:text-xl" : "text-xl md:text-2xl"
-            )}
+            className="flex justify-end text-blue-600 hover:underline mt-2 text-xl md:text-2xl"
           >
-            READ MORE
+            Download PDF
           </a>
         ) : (
           <button
             onClick={() => setExpanded(!expanded)}
-            className={clsx(
-              "cursor-pointer flex justify-end text-blue-600 hover:underline mt-2",
-              variant === "default" ? "text-lg md:text-xl" : "text-xl md:text-2xl"
-            )}
+            className="cursor-pointer flex justify-end text-blue-600 hover:underline mt-2 text-xl md:text-2xl"
           >
             {expanded ? "Read Less" : "READ MORE"}
           </button>

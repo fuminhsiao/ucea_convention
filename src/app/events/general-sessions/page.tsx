@@ -4,7 +4,7 @@ import PageHeader from "@/components/ui/general/PageHeader";
 import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
-import BioBlock from "@/components/ui/general/BioBlock";
+import SessionBlock from "@/components/ui/general/SessionBlock"; // 引入新的 SessionBlock
 
 const pdfUrl = "https://www.ucea.org/docs/Opening_General_Session_091625.pdf";
 
@@ -14,28 +14,27 @@ export default function GeneralSessionsPage() {
       <PageHeader />
       <PageTitle title="General Sessions" />
 
-
-
       <SectionWrapper>
-        <SectionContent>
-
-          <BioBlock
-            name={`UCEA25 Opening General Session: 
-From Colonial Legacies to Collaborative Leadership: Policy Change and Resilience in Puerto Rico’s Schools`}
-            position="Patricia Virella, Montclair State University"
-            description={
+        
+          <SessionBlock
+            sessionType="Opening General Session"
+            sessionName={
               <>
-                <p>Thursday, November 20</p>
-                <p>11:00 a.m.–12:15 p.m.</p>
-                <p>San Juan 4–5</p>
+
+                From Colonial Legacies to Collaborative Leadership:<br /> Policy Change and Resilience in Puerto Rico’s Schools
               </>
             }
-            imageUrl="https://ucea.org/photos/UCEA1758748752_Patricia_Virella_.jpg"
-            reverse={false}
-            variant="narrow"
+            name="Patricia Virella, Montclair State University"
+            description={
+              <>
+                <p>THURSDAY, NOV 20,
+                11:00 A.M.–12:15 P.M.</p>
+                <p>SAN JUAN 4–5</p>
+              </>
+            }
+            imageUrl="https://ucea.org/photos/UCEA1758814125_Patricia_Virella_general_session.png"
             readMoreLink={pdfUrl}
           />
-        </SectionContent>
       </SectionWrapper>
 
       <SectionWrapper>

@@ -52,7 +52,7 @@ export default function SessionBlock({
             alt={name}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
+            className="object-contain"
           />
         </div>
       </motion.div>

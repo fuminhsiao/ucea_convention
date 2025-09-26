@@ -31,7 +31,11 @@ export default function TabbedSwitch({ tabs }: TabbedSwitchProps) {
               className={`px-6 py-4 border-blue-900 -mb-px text-xl cursor-pointer transition-colors duration-300
                 ${isFirst ? "rounded-tl-lg" : ""}
                 ${isLast ? "rounded-tr-lg rounded-br-lg" : ""}
-                ${isActive ? "bg-yellow-400 text-blue-900" : "bg-[#7e7e7e] text-white"}`}
+                ${
+                  isActive
+                    ? "bg-yellow-400 text-blue-900"
+                    : "bg-[#7e7e7e] text-white"
+                }`}
             >
               {tab.title}
             </button>
@@ -39,18 +43,20 @@ export default function TabbedSwitch({ tabs }: TabbedSwitchProps) {
         })}
       </div>
 
-      {/* Content */}
-      <motion.div
-        key={activeIndex} // 觸發切換動畫
-        layout
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-        className="p-10 pt-24 text-black space-y-4 text-xl w-full"
-      >
-        {tabs[activeIndex].content}
-      </motion.div>
+      {/* Content with AnimatePresence */}
+      <div className="p-10 pt-24 text-black space-y-4 text-xl w-full min-h-[200px]">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeIndex}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -15 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            {tabs[activeIndex].content}
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </div>
   );
 }

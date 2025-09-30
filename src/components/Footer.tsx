@@ -122,6 +122,10 @@ const Footer = () => {
               label: "Politics and Policy in PR",
               href: "/events/special-session-3",
             },
+            {
+              label: "Get to know Program Centers",
+              href: "/events/special-session-4",
+            },
           ]}
         />
 

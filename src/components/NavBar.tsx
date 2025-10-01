@@ -71,7 +71,7 @@ const navStructure = [
         href: "/events/special-session-3",
       },
             {
-        label: "Get to know Program Centers",
+        label: "Get to Know Program Centers",
         href: "/events/special-session-4",
       },
     ],

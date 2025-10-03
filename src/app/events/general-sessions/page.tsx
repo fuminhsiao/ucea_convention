@@ -15,26 +15,48 @@ export default function GeneralSessionsPage() {
       <PageTitle title="General Sessions" />
 
       <SectionWrapper>
-        
-          <SessionBlock
-            sessionType="Opening General Session"
-            sessionName={
-              <>
+        <SessionBlock
+          sessionType="Opening General Session"
+          sessionName={
+            <>
+              From Colonial Legacies to Collaborative Leadership:
+              <br /> Policy Change and Resilience in Puerto Rico’s Schools
+            </>
+          }
+          name="Karen Stansberry Beard, Ohio State University
+"
+          description={
+            <>
+              <p>THURSDAY, NOV 20, 11:00 A.M.–12:15 P.M.</p>
+              <p>SAN JUAN 4–5</p>
+            </>
+          }
+          imageUrl="https://ucea.org/photos/UCEA1758814125_Patricia_Virella_general_session.png"
+          readMoreLink={pdfUrl}
+        />
+        <SessionBlock
+          sessionType="UCEA Presidential Address"
+          sessionName={
+            <>
+              Kasserian Ingera de la Comunidad: <br />
+              Inquiry, Sensemaking, and Engagement in Leadership Preparation
+            </>
+          }
+          name="Patricia Virella, Montclair State University"
+          description={
+            <>
+              <p>FRIDAY, NOV 21, 5:30 P.M.–6:30 P.M.</p>
+              <p>The Presidential Address summons the cultural and racial influence mosaic of native (Taíno), colonized,
+and immigrant peoples’ learning exchange. Using both the Maasai and Spanish languages the title,
+Kasserian Ingera de la Comunidad (meaning, “and how are the children of the community?”) poses a
+universal question. Through Inquiry, Sensemaking, and Engagement research, Beard responds with the
+collective responsibility to prepare leaders focused on quality educational experiences and the well-being
+of all students as a guiding light and hope for the future.</p>
 
-                From Colonial Legacies to Collaborative Leadership:<br /> Policy Change and Resilience in Puerto Rico’s Schools
-              </>
-            }
-            name="Patricia Virella, Montclair State University"
-            description={
-              <>
-                <p>THURSDAY, NOV 20,
-                11:00 A.M.–12:15 P.M.</p>
-                <p>SAN JUAN 4–5</p>
-              </>
-            }
-            imageUrl="https://ucea.org/photos/UCEA1758814125_Patricia_Virella_general_session.png"
-            readMoreLink={pdfUrl}
-          />
+            </>
+          }
+          imageUrl="https://ucea.org/photos/UCEA1759457638_Bio.png"
+        />
       </SectionWrapper>
 
       <SectionWrapper>

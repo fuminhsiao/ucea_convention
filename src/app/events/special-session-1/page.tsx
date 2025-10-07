@@ -13,7 +13,7 @@ const sessionDate = {
 };
 
 const pdfUrl =
-  "https://www.ucea.org/docs/Capacity_Building_for_Communication_092325.pdf";
+  "https://www.ucea.org/docs/Capacity_Building_for_Communication_100725.pdf";
 const downloadText = "📄 Download Full PDF";
 
 const sessions = [
@@ -21,10 +21,23 @@ const sessions = [
     title:
       "Invisibilized but Not Erased: Leveraging Invisibility as a Strategic Power for Educational Justice Engagement",
     description:
-      "This interactive session supports P–12 and higher education leaders in navigating social justice issues amid authoritarian political climates. Participants will explore how to leverage invisibility as quiet resistance to affirm students’ rights.",
-    facilitator: "Daniel D. Liou, Arizona State University",
-    photo: "https://ucea.org/photos/UCEA1757085462_Daniel_D._Liou.png",
-    bio: "Daniel D. Liou is an associate professor of education leadership at Arizona State University. As a community-based researcher and former school board president, Daniel’s scholarship explores the sociological manifestations of expectations in the organization of classrooms, schools, and society, contextualizing educational practices in relational, curricular and institutional terms.",
+      "This interactive session supports P–12 and higher education leaders in navigating social justice issues amid authoritarian political climates. Participants will explore how to leverage invisibility as quiet resistance to affirm students’ rights. Daniel D. Lou will be supported in this session by the following faculty:",
+    facilitator:
+      "Daniel D. Liou, Arizona State University; Taeyeon Kim, University of Nebraska-Lincoln; C. A. Langerud, Arizona State University; Grace Liang, Kansas State University; Ishmael Miller, Arizona State University",
+    photo: [
+      "https://ucea.org/photos/UCEA1757085462_Daniel_D._Liou.png",
+      "https://ucea.org/photos/UCEA1759848213_Kim.jpg",
+      "https://ucea.org/photos/UCEA1759848213_Langerud.jpg",
+      "https://ucea.org/photos/UCEA1759848216_Liang.JPG",
+      "https://ucea.org/photos/UCEA1759848213_Ishmael.jpg",
+    ],
+    bio: [
+      ": Daniel D. Liou is an associate professor of education leadership at Arizona State University. As a community-based researcher and former school board president, Daniel’s scholarship explores the sociological manifestations of expectations in the organization of classrooms, schools, and society, contextualizing educational practices in relational, curricular and institutional terms.",
+      "",
+      "",
+      "",
+      "",
+    ],
   },
   {
     title:
@@ -88,8 +101,8 @@ export default function CapacityBuildingSchedule() {
           In the UCEA Call for Proposals, the Convention planning team
           communicated our intention to offer Convention experiences that build
           communication and advocacy skills. To deliver on this intention, we
-          have converted one of this year&apos;s four general sessions into a small set of
-          capacity-building workshops. These sessions are intended to be
+          have converted one of this year&apos;s four general sessions into a small
+          set of capacity-building workshops. These sessions are intended to be
           instructive, interactive, and hands-on with a goal of building a
           specific communication capacity. These sessions will occur on
           Saturday, November 22 from 9:20-10:30 am. Each workshop will be located
@@ -107,7 +120,6 @@ export default function CapacityBuildingSchedule() {
             </a>
           </div>
         </SectionContent>
-
       </SectionWrapper>
 
       <SectionWrapper>
@@ -124,9 +136,7 @@ export default function CapacityBuildingSchedule() {
                   className="text-base md:text-lg text-gray-800 pl-2 relative before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-2 before:h-2 before:rounded-full before:bg-blue-600 before:-translate-x-4"
                 >
                   <span className="font-medium">{time} | </span>
-                  
-                    {content}
-                  
+                  {content}
                 </li>
               );
             })}
@@ -141,12 +151,12 @@ export default function CapacityBuildingSchedule() {
                 <p className="font-bold text-lg mb-1">{s.title}</p>
                 <p className="italic mb-2">{s.description}</p>
                 {Array.isArray(s.photo) ? (
-                  <div className="flex flex-col md:flex-row gap-6 mb-3">
+                  <div className="flex flex-col md:flex-row flex-wrap gap-6 mb-3">
                     {s.photo.map((src, i) => (
                       <img
                         key={i}
                         src={src}
-                        alt={s.facilitator.split(" & ")[i]}
+                        alt={s.facilitator.split(";")[i]?.trim()}
                         className="w-36 h-36 object-cover rounded shadow"
                       />
                     ))}
@@ -162,22 +172,20 @@ export default function CapacityBuildingSchedule() {
                   s.bio.map((b, i) => (
                     <p key={i} className="text-sm text-gray-700 mb-2">
                       <span className="font-semibold">
-                        {s.facilitator.split(" & ")[i]}:
+                        {s.facilitator.split(";")[i]?.trim()} 
                       </span>{" "}
                       {b}
                     </p>
                   ))
                 ) : (
                   <p className="text-sm text-gray-700">
-                    <span className="font-semibold">{s.facilitator}:</span>{" "}
+                    <span className="font-semibold">{s.facilitator} </span>{" "}
                     {s.bio}
                   </p>
                 )}
               </li>
             ))}
           </ul>
-
-          
         </SectionContent>
       </SectionWrapper>
     </div>

@@ -6,7 +6,7 @@ import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 
 const pdfUrl =
-  "https://www.ucea.org/docs/GettoKnowProgramCenters_Sept28.pdf";
+  "https://www.ucea.org/docs/GettoKnowProgramCenters_Oct7a.pdf";
 
 export default function ProgramCentersPage() {
   return (
@@ -28,7 +28,7 @@ export default function ProgramCentersPage() {
           </div>
 
           <p className="text-lg md:text-xl text-gray-800 mb-6">
-            Stop by the Link on Level 2 of the Sheraton Puerto Rico Resort and
+            Stop by the Caribe Lounge on Level 2 of the Sheraton Puerto Rico Resort and
             Casino to learn more about the UCEA Program Centers. Representatives
             from the different centers will be on-hand to answer any questions
             you may have and to let you know the next steps to get involved. All
@@ -62,7 +62,7 @@ export default function ProgramCentersPage() {
             139. Get to Know UCEA Program Centers #1
           </h3>
           <p className="text-base md:text-lg text-gray-700 mb-2">
-            <strong>10:40 to 11:50 am</strong> — Sheraton Puerto Rico: Link
+            <strong>10:40 to 11:50 am</strong> — Sheraton Puerto Rico: Caribe Lounge
           </p>
           <ul className="list-disc pl-6 text-base md:text-lg text-gray-700">
             <li>
@@ -80,7 +80,7 @@ export default function ProgramCentersPage() {
             159. Get to Know UCEA Program Centers #2
           </h3>
           <p className="text-base md:text-lg text-gray-700 mb-2">
-            <strong>1:20 to 2:30 pm</strong> — Sheraton Puerto Rico: Link
+            <strong>1:20 to 2:30 pm</strong> — Sheraton Puerto Rico: Caribe Lounge
           </p>
           <ul className="list-disc pl-6 text-base md:text-lg text-gray-700">
             <li>
@@ -100,7 +100,7 @@ export default function ProgramCentersPage() {
             178. Get to Know UCEA Program Centers #3
           </h3>
           <p className="text-base md:text-lg text-gray-700 mb-2">
-            <strong>2:40 to 3:50 pm</strong> — Sheraton Puerto Rico: Link
+            <strong>2:40 to 3:50 pm</strong> — Sheraton Puerto Rico: Caribe Lounge
           </p>
           <ul className="list-disc pl-6 text-base md:text-lg text-gray-700">
             <li>
@@ -118,7 +118,7 @@ export default function ProgramCentersPage() {
             198. Get to Know UCEA Program Centers #4
           </h3>
           <p className="text-base md:text-lg text-gray-700 mb-2">
-            <strong>4:00 to 5:10 pm</strong> — Sheraton Puerto Rico: Link
+            <strong>4:00 to 5:10 pm</strong> — Sheraton Puerto Rico: Caribe Lounge
           </p>
           <ul className="list-disc pl-6 text-base md:text-lg text-gray-700">
             <li>

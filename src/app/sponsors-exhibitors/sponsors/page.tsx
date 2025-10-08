@@ -104,11 +104,7 @@ const SponsorsPage = () => {
             already committed to supporting <strong>#UCEA25</strong> in San
             Juan, Puerto Rico.
           </p>
-          <p className="text-base text-gray-800 mb-8">
-            Stay tuned as we announce our 2025 sponsors in the coming months. If
-            your organization is interested in joining us as a sponsor, we
-            welcome your partnership!
-          </p>
+          
 
           {/* 🔹 各贊助層級 */}
           {sponsors2025.map((tier) => (

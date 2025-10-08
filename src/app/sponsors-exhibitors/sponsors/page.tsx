@@ -139,27 +139,7 @@ const SponsorsPage = () => {
         </SectionContent>
       </SectionWrapper>
 
-      {/* 2024 SPONSORS SECTION */}
-      <SectionWrapper>
-        <SectionTitle>2024 Sponsors</SectionTitle>
-        <SectionContent>
-          <p className="text-base text-gray-800 mb-4">
-            We extend our heartfelt thanks to all the sponsors who supported the{" "}
-            <strong>2024 UCEA Convention</strong>. Your contributions helped us
-            create a meaningful and impactful experience for educational
-            leaders, researchers, and graduate students across the country.
-          </p>
-          <div className="w-full flex justify-center">
-            <Image
-              src="https://ucea.org/photos/Sponsors2_11122024201738.JPG"
-              alt="2024 Sponsors"
-              width={800}
-              height={500}
-              className="rounded-md border shadow-md"
-            />
-          </div>
-        </SectionContent>
-      </SectionWrapper>
+      
     </div>
   );
 };

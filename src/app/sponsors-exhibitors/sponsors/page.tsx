@@ -57,7 +57,7 @@ const sponsors2025: SponsorTier[] = [
       },
       {
         name: "Kennesaw State University",
-        img: "https://ucea.org/photos/UCEA1759934931_Kennesaw.jpg",
+        img: "https://ucea.org/photos/UCEA1760069432_Kennesaw_State_Department_of_Educational_Leadership.png",
       },
     ],
   },

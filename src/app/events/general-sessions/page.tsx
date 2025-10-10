@@ -23,7 +23,7 @@ export default function GeneralSessionsPage() {
               <br /> Policy Change and Resilience in Puerto Rico’s Schools
             </>
           }
-          name="Karen Stansberry Beard, Ohio State University
+          name="Patricia Virella, Montclair State University
 "
           description={
             <>
@@ -42,7 +42,7 @@ export default function GeneralSessionsPage() {
               Inquiry, Sensemaking, and Engagement in Leadership Preparation
             </>
           }
-          name="Patricia Virella, Montclair State University"
+          name="Karen Stansberry Beard, Ohio State University"
           description={
             <>
               <p>FRIDAY, NOV 21, 5:30 P.M.–6:30 P.M.</p>

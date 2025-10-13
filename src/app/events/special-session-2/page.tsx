@@ -17,12 +17,13 @@ const sessionDates = [
     day: "Saturday, November 22, 2025",
     events: [
       "10:40 – 11:50 a.m. | Seizing the Moment: Policy Windows, Policy Change, and Building Resilient Education Systems",
+      "3:00 – 4:10 p.m. | Resilience-Focused Capacity-Building Workshop 4: Resilience-Focused Capacity-Building Workshops",
     ],
   },
 ];
 
 const pdfUrl =
-  "https://www.ucea.org/docs/Convention_Resilience_Focused_092225.pdf";
+  "https://www.ucea.org/docs/OpeningResilience_combined101025.pdf";
 const downloadText = "📄 Download Full PDF";
 
 const sessions = [
@@ -67,6 +68,15 @@ const sessions = [
       "Cathy Yun is a senior researcher at the Learning Policy Institute and deputy director of EdPrepLab. Her work supports early childhood education, teacher preparation, and local policy partnerships.",
     ],
   },
+  {
+    title:
+      "Resilience-Focused Capacity-Building Workshop 4: Resilience-Focused Capacity-Building Workshops",
+    description:
+      "This workshop will focus on leaders’ resilience, well-being, and humanity, as they stand in the epicenter of community, bridging the expanse between the imperfect and vulnerable self and the public nature of skilled and effective leadership. Through a series of reflections and exercises, participants will gain and enhance strategies for supporting themselves and others, to do effective work, nurture relationships, and build more equitable systems.",
+    facilitator: "Sharon Radd, St. Catherine University",
+    photo: "https://ucea.org/photos/UCEA1760318292_Radd_Headshot.jpg",
+    bio: "Sharon Radd is a Professor in the MA-Organizational Leadership program at St. Catherine University. She is also an Equity Fellow with the Midwest and Plains Equity Assistance Center at Indiana University Purdue University Indianapolis; the Founder and Lead Consultant of ConsciousPraxis based out of Minneapolis; and a Senior Partner with The 5 Practices Group. With 20+ years of experience in public education as a school administrator, professional development facilitator, and school social worker, Radd holds a BA in Liberal Arts from UW-River Falls; a BS in Social Work and an MS in Educational Leadership from Minnesota State Mankato; and an Ed.D. in Educational Leadership from the University of St. Thomas.",
+  },
 ];
 
 export default function ResilienceFocusedSchedule() {
@@ -74,6 +84,8 @@ export default function ResilienceFocusedSchedule() {
     <div className="w-full">
       <PageHeader />
       <PageTitle title="Resilience-Focused Capacity-Building Workshops" />
+
+      {/* Intro Section */}
       <SectionWrapper>
         <SectionContent>
           As part of this year’s commitment to resilience-building, this session
@@ -85,7 +97,7 @@ export default function ResilienceFocusedSchedule() {
           inclusion. Participants will leave with practical tools for initiating
           and sustaining meaningful partnerships that support both scholarly
           rigor and community needs.
-                    <div className="mt-10">
+          <div className="mt-10">
             <a
               href={pdfUrl}
               target="_blank"
@@ -96,9 +108,9 @@ export default function ResilienceFocusedSchedule() {
             </a>
           </div>
         </SectionContent>
-        
       </SectionWrapper>
 
+      {/* Session Dates Section */}
       {sessionDates.map((session, idx) => (
         <SectionWrapper key={idx}>
           <SectionContent>
@@ -123,6 +135,7 @@ export default function ResilienceFocusedSchedule() {
         </SectionWrapper>
       ))}
 
+      {/* Featured Workshops Section */}
       <SectionWrapper>
         <SectionContent>
           <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-6">
@@ -133,6 +146,8 @@ export default function ResilienceFocusedSchedule() {
               <li key={index} className="text-base md:text-lg text-gray-900">
                 <p className="font-bold text-lg mb-1">{s.title}</p>
                 <p className="italic mb-2">{s.description}</p>
+
+                {/* Photo Section */}
                 {Array.isArray(s.photo) ? (
                   <div className="flex flex-col md:flex-row gap-6 mb-3">
                     {s.photo.map((src, i) => (
@@ -151,6 +166,8 @@ export default function ResilienceFocusedSchedule() {
                     className="w-36 h-36 object-cover rounded shadow mb-3"
                   />
                 )}
+
+                {/* Bio Section */}
                 {Array.isArray(s.bio) ? (
                   s.bio.map((b, i) => (
                     <p key={i} className="text-sm text-gray-700 mb-2">
@@ -169,8 +186,6 @@ export default function ResilienceFocusedSchedule() {
               </li>
             ))}
           </ul>
-
-
         </SectionContent>
       </SectionWrapper>
     </div>

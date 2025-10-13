@@ -53,8 +53,7 @@ export default function PresenterTipsPage() {
                     <ul className="list-disc pl-6 mt-1">
                       <li>Run the session smoothly and efficiently.</li>
                       <li>
-                        Facilitate a robust conversation by reviewing papers
-                        beforehand.
+                        Facilitate a robust conversation by reviewing paper summaries beforehand.
                       </li>
                       <li>Make sure all presenters are part of the discussion.</li>
                     </ul>

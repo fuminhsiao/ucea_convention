@@ -37,7 +37,7 @@ const navStructure = [
   {
     label: "ATTENDEE INFO",
     items: [
-      { label: "Hotel", href: "/attendee-info/hotel" },
+      { label: "Hotel & Travel", href: "/attendee-info/hotel" },
       { label: "Registration", href: "/attendee-info/registration" },
       { label: "Schedule at a Glance", href: "/attendee-info/schedule" },
       { label: "Program", href: "/attendee-info/program" },

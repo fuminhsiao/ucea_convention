@@ -14,7 +14,7 @@ const sessionDates = [
   },
 ];
 
-const pdfUrl = "https://www.ucea.org/docs/PolicyandPolitics_in_PR_091725.pdf";
+const pdfUrl = "https://www.ucea.org/docs/UCEA_PolicyandPolitics_in_PR_Oct13.pdf";
 const downloadText = "📄 Download Full PDF";
 
 const sessions = [
@@ -29,13 +29,7 @@ const sessions = [
       "Cristóbal Rodríguez is a scholar of Educational Leadership and Policy Studies with deep experience in advocacy, educational equity, and Latino/a/x student success. His research and leadership reflect culturally responsive leadership and systemic reform.",
     ],
     panelists: [
-      {
-        name: "Chris Soto",
-        title:
-          "Senior Advisor to the 12th U.S. Secretary of Education, Miguel Cardona",
-        photo: "https://ucea.org/photos/UCEA1758663388_Chris_Soto.jpg",
-        bio: "Chris Soto has served at multiple levels of government and nonprofit sectors, including as a Connecticut state legislator and founder of Higher Edge, a college-access nonprofit.",
-      },
+      
       {
         name: "Melody Gonzales",
         title:

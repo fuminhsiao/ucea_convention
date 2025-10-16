@@ -24,9 +24,9 @@ const ProgramPage = () => {
 
           <p className="  text-gray-800 mb-4">
             <strong>
-              The deadline to submit changes for the print program is October 15.
+              The deadline to submit changes for the print program is October 19.
             </strong>{" "}
-            Any changes submitted after October 15 will not be included in the print program.
+            Any changes submitted after October 19 will not be included in the print program.
           </p>
 
           <p className="  text-gray-800 mb-4">

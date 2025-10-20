@@ -55,10 +55,10 @@ export default function AnnualBanquetPage() {
           </div>
 
           {/* Images */}
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col md:flex-row gap-6  items-center">
 
             <img
-              src="https://ucea.org/photos/UCEA1760624672_2024_1.JPG"
+              src="https://ucea.org/photos/UCEA1760929412_Pool_1.jpeg"
               alt="2024 UCEA Banquet"
               className="w-full md:w-1/2 rounded-lg shadow-md border"
             />

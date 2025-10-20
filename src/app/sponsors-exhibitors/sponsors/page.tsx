@@ -59,6 +59,10 @@ const sponsors2025: SponsorTier[] = [
         name: "Kennesaw State University",
         img: "https://ucea.org/photos/UCEA1760069432_Kennesaw_State_Department_of_Educational_Leadership.png",
       },
+      {
+        name: "University of Denver",
+        img: "https://ucea.org/photos/UCEA1760929045_du-morgridge-logo-horizontal-1-clr-rgb-9.jpg",
+      },
     ],
   },
   {

@@ -11,7 +11,7 @@ export default function PresenterTipsPage() {
   return (
     <div className="w-full">
       <PageHeader />
-      <PageTitle title="Presenter Tips" />
+      <PageTitle title="Facilitator Tips" />
 
       <SectionWrapper>
         <SectionContent>

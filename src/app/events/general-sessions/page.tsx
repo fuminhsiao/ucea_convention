@@ -7,7 +7,7 @@ import SectionContent from "@/components/ui/general/SectionContent";
 import SessionBlock from "@/components/ui/general/SessionBlock";
 
 const pdfUrl1 = "https://www.ucea.org/docs/Opening_General_Session_091625.pdf";
-const pdfUrl2 = "https://www.ucea.org/docs/GeneralSessionII_Oct21.pdf";
+const pdfUrl2 = "https://www.ucea.org/docs/GeneralSessionII_Oct22.pdf";
 
 export default function GeneralSessionsPage() {
   return (
@@ -36,6 +36,26 @@ export default function GeneralSessionsPage() {
           readMoreLink={pdfUrl1}
         />
 
+        {/* General Session II */}
+        <SessionBlock
+          sessionType="General Session II"
+          sessionName={
+            <>
+              Elevating Practitioner Voices: <br />
+              Discussions on Resilience Through Collaboration and Community
+            </>
+          }
+          name="Jaime Aquino, Cathi Davis, Virginia Hill, Ana María García Blanco, Facilitator: Osly Flores"
+          description={
+            <>
+              <p>FRIDAY, NOV 21, 9:20 A.M.–10:30 A.M.</p>
+              <p>SAN JUAN 4–5</p>
+            </>
+          }
+          imageUrl="https://ucea.org/photos/UCEA1761234783_General_session_21023-2.png"
+          readMoreLink={pdfUrl2}
+        />
+        
         {/* UCEA Presidential Address */}
         <SessionBlock
           sessionType="UCEA Presidential Address"
@@ -64,26 +84,6 @@ export default function GeneralSessionsPage() {
             </>
           }
           imageUrl="https://ucea.org/photos/UCEA1759457638_Bio.png"
-        />
-
-        {/* General Session II */}
-        <SessionBlock
-          sessionType="General Session II"
-          sessionName={
-            <>
-              Elevating Practitioner Voices: <br />
-              Discussions on Resilience Through Collaboration and Community
-            </>
-          }
-          name="Jaime Aquino, Cathi Davis, Virginia Hill, FACILITATOR: Osly Flores"
-          description={
-            <>
-              <p>FRIDAY, NOV 21, 9:20 A.M.–10:30 A.M.</p>
-              <p>SAN JUAN 4–5</p>
-            </>
-          }
-          imageUrl="https://ucea.org/photos/UCEA1761082417_General_session_2.png"
-          readMoreLink={pdfUrl2}
         />
       </SectionWrapper>
 

@@ -67,7 +67,7 @@ const navStructure = [
         href: "/events/special-session-2",
       },
       {
-        label: "Politics and Policy in PR",
+        label: "Policy and Politics in PR",
         href: "/events/special-session-3",
       },
             {

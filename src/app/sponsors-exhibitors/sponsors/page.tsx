@@ -63,6 +63,10 @@ const sponsors2025: SponsorTier[] = [
         name: "University of Denver",
         img: "https://ucea.org/photos/UCEA1760929045_du-morgridge-logo-horizontal-1-clr-rgb-9.jpg",
       },
+      {
+        name: "Penn State University",
+        img: "https://ucea.org/photos/UCEA1761235122_Penn_State_logo.png",
+      },
     ],
   },
   {

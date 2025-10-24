@@ -23,7 +23,7 @@ const sessionDates = [
 ];
 
 const pdfUrl =
-  "https://www.ucea.org/docs/OpeningResilience_combined101725.pdf";
+  "https://www.ucea.org/docs/OpeningResilience_combined102325.pdf";
 const downloadText = "📄 Download Full PDF";
 
 const sessions = [

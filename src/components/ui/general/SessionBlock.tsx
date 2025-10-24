@@ -28,12 +28,25 @@ export default function SessionBlock({
   const [isOverflowing, setIsOverflowing] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  // Check if content overflows
-  useEffect(() => {
+  // 檢查內容是否超出
+  const checkOverflow = () => {
     const el = contentRef.current;
     if (el) {
-      setIsOverflowing(el.scrollHeight > 160); // adjust 300px threshold if needed
+      setIsOverflowing(el.scrollHeight > 160);
     }
+  };
+
+  useEffect(() => {
+    // 初次渲染後稍微延遲再檢查一次，確保內容已渲染
+    const timer = setTimeout(checkOverflow, 300);
+
+    // 在視窗大小變化時也重新檢查
+    window.addEventListener("resize", checkOverflow);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("resize", checkOverflow);
+    };
   }, []);
 
   return (
@@ -63,6 +76,7 @@ export default function SessionBlock({
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-contain"
+            onLoad={checkOverflow} // ✅ 圖片載入後重新檢查
           />
         </div>
       </motion.div>

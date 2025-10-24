@@ -5,18 +5,34 @@ import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 
-const sessionDate = {
+const fridaySession = {
+  day: "Friday, November 21, 2025",
+  events: ["4:00 – 5:10 p.m. | Capacity-Building for Communication & Engagement"],
+};
+
+const saturdaySession = {
   day: "Saturday, November 22, 2025",
-  events: [
-    "9:20 – 10:30 a.m. | Capacity-Building for Communication & Engagement",
-  ],
+  events: ["9:20 – 10:30 a.m. | Capacity-Building for Communication & Engagement"],
 };
 
 const pdfUrl =
-  "https://www.ucea.org/docs/Capacity_Building_for_Communication_100725.pdf";
+  "https://www.ucea.org/docs/Capacity_Building_for_Communication_101325.pdf";
 const downloadText = "📄 Download Full PDF";
 
 const sessions = [
+  {
+    title: "Advocating for Educational Leadership: Tools for the Field",
+    description:
+      "This workshop offers participants an in-depth exploration of the UCEA Advocacy Guidebook: Building Consensus for Excellence in Leadership Preparation (Lochmiller, Furlong & Yessirkepova, 2025). The guidebook provides tools and strategies for educational leaders to engage effectively with policymakers across local, state, and federal levels—building relationships, leveraging networks, and influencing public policy through informed communication. Participants will discuss concrete examples of how to adapt advocacy strategies within their own contexts.",
+    facilitator:
+      "Chad R. Lochmiller, Indiana University; Darcy E. Furlong, Indiana University; Zhamilya Yessirkepova, Michigan State University",
+    photo: [
+      "https://ucea.org/photos/UCEA1761323637_lochmiller-chad.jpg",
+    ],
+    bio: [
+      "Chad R. Lochmiller is UCEA Associate Director for Policy & Advocacy and Professor of Educational Leadership at Indiana University Bloomington. His research examines leadership and policy issues related to school improvement and leadership development, and he is co-author of the UCEA Advocacy Guidebook (2025).",
+    ],
+  },
   {
     title:
       "Invisibilized but Not Erased: Leveraging Invisibility as a Strategic Power for Educational Justice Engagement",
@@ -67,8 +83,7 @@ const sessions = [
     bio: "David DeMatthews is the W.K. Kellogg Endowed Professor in the Department of Educational Leadership and Policy at The University of Texas at Austin. His research focuses on district and school leadership, particularly in relation to student inclusion and equity, as well as superintendent/principal stress and turnover.",
   },
   {
-    title:
-      "Scholarship in Action: Crafting Research Conversations With Practitioners",
+    title: "Scholarship in Action: Crafting Research Conversations With Practitioners",
     description:
       "Learn how to write for practitioner-focused publications and engage non-academic audiences. This workshop features strategies for translating academic work into formats accessible to educators and policymakers.",
     facilitator: "Ann M. Ishimaru & Decoteau J. Irby",
@@ -104,11 +119,11 @@ export default function CapacityBuildingSchedule() {
           have converted one of this year&apos;s four general sessions into a small
           set of capacity-building workshops. These sessions are intended to be
           instructive, interactive, and hands-on with a goal of building a
-          specific communication capacity. These sessions will occur on
-          Saturday, November 22 from 9:20-10:30 am. Each workshop will be located
-          in a separate room. All UCEA convention participants will have the
-          ability to select one of these workshops to join on Saturday morning.
-          Please mark your calendars now and join us on Saturday morning!
+          specific communication capacity. These sessions will occur on Friday,
+          November 21 from 4:00–5:10 p.m. and Saturday, November 22 from
+          9:20–10:30 a.m. Each workshop will be located in a separate room. All
+          UCEA convention participants will have the ability to select one of
+          these workshops to join. Please mark your calendars and join us!
           <div className="mt-10">
             <a
               href={pdfUrl}
@@ -122,13 +137,37 @@ export default function CapacityBuildingSchedule() {
         </SectionContent>
       </SectionWrapper>
 
+      {/* Friday Session */}
       <SectionWrapper>
         <SectionContent>
           <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-4 border-l-4 border-blue-500 pl-4">
-            {sessionDate.day}
+            {fridaySession.day}
           </h3>
           <ul className="space-y-2 mb-10">
-            {sessionDate.events.map((event, idx) => {
+            {fridaySession.events.map((event, idx) => {
+              const [time, content] = event.split(" | ");
+              return (
+                <li
+                  key={idx}
+                  className="text-base md:text-lg text-gray-800 pl-2 relative before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-2 before:h-2 before:rounded-full before:bg-blue-600 before:-translate-x-4"
+                >
+                  <span className="font-medium">{time} | </span>
+                  {content}
+                </li>
+              );
+            })}
+          </ul>
+        </SectionContent>
+      </SectionWrapper>
+
+      {/* Saturday Session */}
+      <SectionWrapper>
+        <SectionContent>
+          <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-4 border-l-4 border-blue-500 pl-4">
+            {saturdaySession.day}
+          </h3>
+          <ul className="space-y-2 mb-10">
+            {saturdaySession.events.map((event, idx) => {
               const [time, content] = event.split(" | ");
               return (
                 <li
@@ -172,7 +211,7 @@ export default function CapacityBuildingSchedule() {
                   s.bio.map((b, i) => (
                     <p key={i} className="text-sm text-gray-700 mb-2">
                       <span className="font-semibold">
-                        {s.facilitator.split(";")[i]?.trim()} 
+                        {s.facilitator.split(";")[i]?.trim()}
                       </span>{" "}
                       {b}
                     </p>

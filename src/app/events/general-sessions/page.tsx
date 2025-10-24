@@ -6,8 +6,8 @@ import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 import SessionBlock from "@/components/ui/general/SessionBlock";
 
-const pdfUrl1 = "https://www.ucea.org/docs/Opening_General_Session_091625.pdf";
-const pdfUrl2 = "https://www.ucea.org/docs/GeneralSessionII_Oct22.pdf";
+const pdfUrl1 = "https://www.ucea.org/docs/OpeningResilience_combined102325.pdf";
+const pdfUrl2 = "https://www.ucea.org/docs/GeneralSessionII_Oct23a.pdf";
 
 export default function GeneralSessionsPage() {
   return (
@@ -30,6 +30,17 @@ export default function GeneralSessionsPage() {
             <>
               <p>THURSDAY, NOV 20, 11:00 A.M.–12:15 P.M.</p>
               <p>SAN JUAN 4–5</p>
+
+              <div className="mt-4">
+                <p className="text-base md:text-lg text-gray-800 font-semibold">
+                  Sponsored by Penn State University
+                </p>
+                <img
+                  src="https://ucea.org/photos/UCEA1761235122_Penn_State_logo.png"
+                  alt="Penn State University Logo"
+                  className="mt-3 w-48 md:w-56 object-contain"
+                />
+              </div>
             </>
           }
           imageUrl="https://ucea.org/photos/UCEA1758814125_Patricia_Virella_general_session.png"
@@ -50,12 +61,23 @@ export default function GeneralSessionsPage() {
             <>
               <p>FRIDAY, NOV 21, 9:20 A.M.–10:30 A.M.</p>
               <p>SAN JUAN 4–5</p>
+
+              <div className="mt-4">
+                <p className="text-base md:text-lg text-gray-800 font-semibold">
+                  Sponsored by the University of Georgia Morrill M. Hall Endowed Chair in Educational Administration
+                </p>
+                <img
+                  src="https://ucea.org/photos/UCEA1759933731_UGAlogo_Vertical_FC_MARCM_copy.jpg"
+                  alt="University of Georgia Morrill M. Hall Endowed Chair in Educational Administration"
+                  className="mt-3 w-40 md:w-48 object-contain"
+                />
+              </div>
             </>
           }
           imageUrl="https://ucea.org/photos/UCEA1761234783_General_session_21023-2.png"
           readMoreLink={pdfUrl2}
         />
-        
+
         {/* UCEA Presidential Address */}
         <SessionBlock
           sessionType="UCEA Presidential Address"

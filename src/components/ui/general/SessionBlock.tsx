@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import clsx from "clsx";
@@ -25,6 +25,16 @@ export default function SessionBlock({
   reverse = false,
 }: SessionBlockProps) {
   const [expanded, setExpanded] = useState(false);
+  const [isOverflowing, setIsOverflowing] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  // Check if content overflows
+  useEffect(() => {
+    const el = contentRef.current;
+    if (el) {
+      setIsOverflowing(el.scrollHeight > 160); // adjust 300px threshold if needed
+    }
+  }, []);
 
   return (
     <motion.div
@@ -46,7 +56,7 @@ export default function SessionBlock({
           "w-full xl:w-4/12"
         )}
       >
-        <div className="relative w-100 h-[28rem]">
+        <div className="relative w-full h-[28rem]">
           <Image
             src={imageUrl}
             alt={name}
@@ -66,7 +76,7 @@ export default function SessionBlock({
         className="flex flex-col justify-center text-black text-left px-2 md:px-6 w-full xl:w-8/12"
       >
         {/* Session Type 標籤 */}
-        <div className="text-xl w-fit text-white bg-[#00334e]  inline-block px-3 py-1 rounded-full mb-3">
+        <div className="text-xl w-fit text-white bg-[#00334e] inline-block px-3 py-1 rounded-full mb-3">
           {sessionType}
         </div>
 
@@ -80,31 +90,44 @@ export default function SessionBlock({
 
         {/* 展開式描述區塊 */}
         <motion.div
-          animate={{ height: expanded ? "auto" : 160 }}
+          animate={{ maxHeight: expanded ? 2000 : 160 }}
           initial={false}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="overflow-hidden"
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="relative overflow-hidden"
         >
-          <div className="leading-relaxed text-xl md:text-2xl font-bold ">{description}</div>
+          <div
+            ref={contentRef}
+            className="leading-relaxed text-xl md:text-2xl font-bold space-y-3 [&_img]:max-w-[220px] [&_img]:h-auto [&_img]:rounded-md"
+          >
+            {description}
+          </div>
+          {!expanded && isOverflowing && (
+            <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none" />
+          )}
         </motion.div>
 
-        {/* READ MORE / PDF 連結 */}
-        {readMoreLink ? (
-          <a
-            href={readMoreLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-end text-blue-600 hover:underline mt-2 text-xl md:text-2xl"
-          >
-            Download PDF
-          </a>
-        ) : (
-          <button
-            onClick={() => setExpanded(!expanded)}
-            className="cursor-pointer flex justify-end text-blue-600 hover:underline mt-2 text-xl md:text-2xl"
-          >
-            {expanded ? "Read Less" : "READ MORE"}
-          </button>
+        {/* 控制按鈕列 */}
+        {(isOverflowing || readMoreLink) && (
+          <div className="flex justify-end gap-6 mt-3">
+            {isOverflowing && (
+              <button
+                onClick={() => setExpanded(!expanded)}
+                className="cursor-pointer text-blue-600 hover:underline text-xl md:text-2xl"
+              >
+                {expanded ? "Read Less" : "Read More"}
+              </button>
+            )}
+            {readMoreLink && (
+              <a
+                href={readMoreLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline text-xl md:text-2xl"
+              >
+                Download PDF
+              </a>
+            )}
+          </div>
         )}
       </motion.div>
     </motion.div>

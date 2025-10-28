@@ -19,20 +19,21 @@ const pdfUrl =
   "https://www.ucea.org/docs/Capacity_Building_for_Communication_101325.pdf";
 const downloadText = "📄 Download Full PDF";
 
-const sessions = [
-  {
-    title: "Advocating for Educational Leadership: Tools for the Field",
-    description:
-      "This workshop offers participants an in-depth exploration of the UCEA Advocacy Guidebook: Building Consensus for Excellence in Leadership Preparation (Lochmiller, Furlong & Yessirkepova, 2025). The guidebook provides tools and strategies for educational leaders to engage effectively with policymakers across local, state, and federal levels—building relationships, leveraging networks, and influencing public policy through informed communication. Participants will discuss concrete examples of how to adapt advocacy strategies within their own contexts.",
-    facilitator:
-      "Chad R. Lochmiller, Indiana University; Darcy E. Furlong, Indiana University; Zhamilya Yessirkepova, Michigan State University",
-    photo: [
-      "https://ucea.org/photos/UCEA1761323637_lochmiller-chad.jpg",
-    ],
-    bio: [
-      "Chad R. Lochmiller is UCEA Associate Director for Policy & Advocacy and Professor of Educational Leadership at Indiana University Bloomington. His research examines leadership and policy issues related to school improvement and leadership development, and he is co-author of the UCEA Advocacy Guidebook (2025).",
-    ],
-  },
+// --- FRIDAY WORKSHOP ---
+const fridayWorkshop = {
+  title: "Advocating for Educational Leadership: Tools for the Field",
+  description:
+    "This workshop offers participants an in-depth exploration of the UCEA Advocacy Guidebook: Building Consensus for Excellence in Leadership Preparation (Lochmiller, Furlong & Yessirkepova, 2025). The guidebook provides tools and strategies for educational leaders to engage effectively with policymakers across local, state, and federal levels—building relationships, leveraging networks, and influencing public policy through informed communication. Participants will discuss concrete examples of how to adapt advocacy strategies within their own contexts.",
+  facilitator:
+    "Chad R. Lochmiller, Indiana University; Darcy E. Furlong, Indiana University; Zhamilya Yessirkepova, Michigan State University",
+  photo: ["https://ucea.org/photos/UCEA1761323637_lochmiller-chad.jpg"],
+  bio: [
+    "Chad R. Lochmiller is UCEA Associate Director for Policy & Advocacy and Professor of Educational Leadership at Indiana University Bloomington. His research examines leadership and policy issues related to school improvement and leadership development, and he is co-author of the UCEA Advocacy Guidebook (2025).",
+  ],
+};
+
+// --- SATURDAY WORKSHOPS ---
+const saturdayWorkshops = [
   {
     title:
       "Invisibilized but Not Erased: Leveraging Invisibility as a Strategic Power for Educational Justice Engagement",
@@ -48,11 +49,7 @@ const sessions = [
       "https://ucea.org/photos/UCEA1759848213_Ishmael.jpg",
     ],
     bio: [
-      ": Daniel D. Liou is an associate professor of education leadership at Arizona State University. As a community-based researcher and former school board president, Daniel’s scholarship explores the sociological manifestations of expectations in the organization of classrooms, schools, and society, contextualizing educational practices in relational, curricular and institutional terms.",
-      "",
-      "",
-      "",
-      "",
+      "Daniel D. Liou is an associate professor of education leadership at Arizona State University. As a community-based researcher and former school board president, Daniel’s scholarship explores the sociological manifestations of expectations in the organization of classrooms, schools, and society, contextualizing educational practices in relational, curricular and institutional terms.",
     ],
   },
   {
@@ -111,6 +108,8 @@ export default function CapacityBuildingSchedule() {
     <div className="w-full">
       <PageHeader />
       <PageTitle title="Capacity-Building for Communication & Engagement" />
+
+      {/* Intro + PDF */}
       <SectionWrapper>
         <SectionContent>
           In the UCEA Call for Proposals, the Convention planning team
@@ -157,10 +156,25 @@ export default function CapacityBuildingSchedule() {
               );
             })}
           </ul>
+
+          {/* Advocacy Workshop */}
+          <div className="text-base md:text-lg text-gray-900 mt-6">
+            <p className="font-bold text-lg mb-1">{fridayWorkshop.title}</p>
+            <p className="italic mb-2">{fridayWorkshop.description}</p>
+            <img
+              src={fridayWorkshop.photo[0]}
+              alt={fridayWorkshop.facilitator}
+              className="w-36 h-36 object-cover rounded shadow mb-3"
+            />
+            <p className="text-sm text-gray-700 mb-2">
+              <span className="font-semibold">{fridayWorkshop.facilitator}</span>
+            </p>
+            <p className="text-sm text-gray-700">{fridayWorkshop.bio}</p>
+          </div>
         </SectionContent>
       </SectionWrapper>
 
-      {/* Saturday Session */}
+      {/* Saturday Sessions */}
       <SectionWrapper>
         <SectionContent>
           <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-4 border-l-4 border-blue-500 pl-4">
@@ -181,11 +195,9 @@ export default function CapacityBuildingSchedule() {
             })}
           </ul>
 
-          <h3 className="text-xl md:text-2xl font-semibold text-[#00334e] mb-6">
-            Featured Workshop Sessions
-          </h3>
+          {/* Saturday Workshop List */}
           <ul className="space-y-10">
-            {sessions.map((s, index) => (
+            {saturdayWorkshops.map((s, index) => (
               <li key={index} className="text-base md:text-lg text-gray-900">
                 <p className="font-bold text-lg mb-1">{s.title}</p>
                 <p className="italic mb-2">{s.description}</p>

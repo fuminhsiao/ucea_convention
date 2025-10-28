@@ -180,7 +180,7 @@ export default function SchedulePage() {
               </li>
               <li>Learn about special convention events that you should join</li>
               <li>
-                Meet members of this year's convention planning team and executive committee
+                Meet members of this year&apos;s convention planning team and executive committee
               </li>
               <li>
                 Engage in networking activities with other first-time conference attendees

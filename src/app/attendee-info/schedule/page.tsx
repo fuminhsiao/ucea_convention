@@ -93,7 +93,6 @@ export default function SchedulePage() {
                   const isCapacity = content.includes(
                     "Community-Oriented Capacity Building Sessions"
                   );
-                  const isGeneralSession = content.toLowerCase().includes("general session");
 
                   return (
                     <li key={idx} className="flex items-start gap-2 text-gray-800">
@@ -128,13 +127,6 @@ export default function SchedulePage() {
                         ) : isCapacity ? (
                           <a
                             href="/events/special-session-1"
-                            className="underline text-blue-600 hover:text-blue-800 ml-1"
-                          >
-                            {content}
-                          </a>
-                        ) : isGeneralSession ? (
-                          <a
-                            href="/events/general-sessions/"
                             className="underline text-blue-600 hover:text-blue-800 ml-1"
                           >
                             {content}

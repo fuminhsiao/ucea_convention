@@ -6,7 +6,7 @@ import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 
 const pdfUrl =
-  "https://www.ucea.org/docs/Capacity_Building_for_Communication_101325.pdf";
+  "https://www.ucea.org/docs/OpeningResilience_combined102325.pdf";
 const downloadText = "📄 Download Full PDF";
 
 const workshops = [

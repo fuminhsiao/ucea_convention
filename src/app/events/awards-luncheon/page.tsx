@@ -15,7 +15,7 @@ export default function AwardsLuncheonPage() {
       <SectionWrapper>
         <SectionContent>
           <p className="text-lg md:text-2xl text-gray-800 mb-4">
-            <strong>Thursday, November 21</strong>
+            <strong>Thursday, November 20</strong>
             <br />
             Sheraton Puerto Rico Resort and Casino: Miramar 4
           </p>

@@ -26,7 +26,7 @@ export default function CFP2025SubmissionDetailsPage() {
             <li>Register for the Convention</li>
           </ul>
           <p>
-            Furthermore, as a professional courtesy, lead authors should email their paper summary to the session facilitator and other session participants or upload to All Academic by <strong>November 1, 2025.</strong> Ignite presenters are expected to email a two-page summary of the talking points they will be sharing at the convention with the session facilitator prior to the <strong>November 1</strong> deadline.
+            Furthermore, as a professional courtesy, lead authors should email their paper summary to the session facilitator and other session participants or upload to All Academic by <strong>November 10th, 2025.</strong> Ignite presenters are expected to email a two-page summary of the talking points they will be sharing at the convention with the session facilitator prior to the <strong>November 10th</strong> deadline.
           </p>
         </SectionContent>
       </SectionWrapper>

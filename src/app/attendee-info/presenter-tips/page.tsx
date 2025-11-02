@@ -24,7 +24,7 @@ export default function PresenterTipsPage() {
                   <>
                     <SectionTitle>Paper Presenter Tips</SectionTitle>
                     <a
-                      href="https://www.ucea.org/docs/2025_UCEA_Paper_Presenter_Instructions_10.9.25.pdf"
+                      href="https://www.ucea.org/docs/2025_UCEA_Paper_Presenter_Instructions_10.31.25.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 underline mb-6 inline-block"
@@ -40,7 +40,7 @@ export default function PresenterTipsPage() {
                       <strong>
                         Upload your paper in All Academic by{" "}
                         <span className="text-blue-800 font-semibold">
-                          November 1st
+                          November 10th
                         </span>
                       </strong>
                     </p>
@@ -145,7 +145,7 @@ export default function PresenterTipsPage() {
                         <strong>
                           Upload your paper summary in All Academic{" "}
                           <span className="text-blue-800 font-semibold">
-                            NO LATER than November 1st
+                            NO LATER than November 10th
                           </span>
                           .
                         </strong>{" "}
@@ -168,7 +168,7 @@ export default function PresenterTipsPage() {
                   <>
                     <SectionTitle>Roundtable Presenter Tips</SectionTitle>
                     <a
-                      href="https://www.ucea.org/docs/2025_UCEA_Roundtable_Presenter_Instructions_10.9.25.pdf"
+                      href="https://www.ucea.org/docs/2025_UCEA_Roundtable_Presenter_Instructions_10.31.25.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 underline mb-6 inline-block"
@@ -184,7 +184,7 @@ export default function PresenterTipsPage() {
                       <strong>
                         Upload your paper on All Academic by{" "}
                         <span className="text-blue-800 font-semibold">
-                          November 1
+                          November 10th
                         </span>
                       </strong>
                     </p>
@@ -275,7 +275,7 @@ export default function PresenterTipsPage() {
                       <li>
                         Upload your paper summary to All Academic{" "}
                         <span className="text-blue-800 font-semibold">
-                          NO LATER than November 1
+                          NO LATER than November 10th
                         </span>
                         . Upload your paper by replacing the proposal in All
                         Academic.

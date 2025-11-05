@@ -59,10 +59,7 @@ const sponsors2025: SponsorTier[] = [
         name: "Kennesaw State University",
         img: "https://ucea.org/photos/UCEA1760069432_Kennesaw_State_Department_of_Educational_Leadership.png",
       },
-      {
-        name: "University of Denver",
-        img: "https://ucea.org/photos/UCEA1760929045_du-morgridge-logo-horizontal-1-clr-rgb-9.jpg",
-      },
+      
       {
         name: "Penn State University",
         img: "https://ucea.org/photos/UCEA1761235122_Penn_State_logo.png",
@@ -91,6 +88,10 @@ const sponsors2025: SponsorTier[] = [
       {
         name: "Routledge: Taylor & Francis Group",
         img: "https://ucea.org/photos/UCEA1759933731_Routledge_blue.png",
+      },
+      {
+        name: "University of Denver",
+        img: "https://ucea.org/photos/UCEA1760929045_du-morgridge-logo-horizontal-1-clr-rgb-9.jpg",
       },
     ],
   },

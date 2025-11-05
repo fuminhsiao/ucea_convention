@@ -284,6 +284,80 @@ export default function PresenterTipsPage() {
                   </>
                 ),
               },
+              {
+  title: "Practice-Based Presenter Instructions",
+  content: (
+    <>
+      <SectionTitle>Practice-Based Presenter Tips</SectionTitle>
+
+      <a
+        href="https://www.ucea.org/docs/2025_UCEA_PracticeBased_Presenter_Instructions.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 underline mb-6 inline-block"
+      >
+        Download Full Practice-Based Presenter Instructions (PDF)
+      </a>
+
+      <p className="italic text-gray-700 mb-2">
+        Sessions at Sheraton Puerto Rico Resort and Casino
+      </p>
+
+      <p>
+        Please consider the following guidelines as you prepare remarks for your
+        practice-based presentation at Convention. Better communication of your
+        ideas means more attendees will engage with your work. Staying within
+        time limits ensures space for questions and discussion.
+      </p>
+
+      <p className="mt-3">
+        <strong>
+          Prepare for a{" "}
+          <span className="text-blue-800 font-semibold">12-minute MAX</span>{" "}
+          practice-based presentation.
+        </strong>{" "}
+        Use this time to highlight innovations, effective strategies, or tools.
+        Your goal is to spark interest and engagement.
+      </p>
+
+      <ul className="list-disc pl-6 mt-2">
+        <li>Include PowerPoint slides — we suggest <strong>5–10</strong></li>
+        <li>Use simple, clear, readable visuals</li>
+        <li>Make your presentation accessible to a diverse audience</li>
+        <li>Bring your own laptop — VGA adapters are provided</li>
+        <li>Bring a backup copy on a flash drive</li>
+        <li>Watch timecards from the facilitator to end on time</li>
+      </ul>
+
+      <p className="mt-4 font-semibold">
+        We encourage you to include the following points in your presentation:
+      </p>
+
+      <ul className="list-disc pl-6">
+        <li>
+          Explain the innovation/strategy/tool and its importance to
+          practitioners and/or researchers
+        </li>
+        <li>Situate your work in existing scholarship</li>
+        <li>
+          Discuss uses and implications for researchers, practitioners, and
+          instructors
+        </li>
+      </ul>
+
+      <h3 className="mt-6 font-semibold">Additional considerations:</h3>
+      <ul className="list-disc pl-6">
+        <li>
+          Arrive <strong>5–10 minutes early</strong> to test technology
+        </li>
+        <li>
+          Ensure laptop adapter remains attached to podium after your session
+        </li>
+      </ul>
+    </>
+  ),
+}
+
 
               // ===== FACILITATOR TAB =====
               

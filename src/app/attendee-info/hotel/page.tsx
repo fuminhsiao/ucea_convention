@@ -174,6 +174,26 @@ export default function HotelTravelPage() {
             online or by calling <b>1-866-932-7269</b>. Use code <b>AEC</b>{" "}
             when booking by phone.
           </p>
+          {/* Hotel Parking Section */}
+<p className="mt-10 font-bold text-xl text-black">Hotel Parking</p>
+
+<p className="mt-3 font-semibold">Guests Staying Overnight at the Sheraton</p>
+<ul className="list-disc pl-6">
+  <li>The parking rate is $20 per vehicle per day.</li>
+</ul>
+
+<p className="mt-4 font-semibold">Guests Not Staying Overnight at the Sheraton</p>
+<ul className="list-disc pl-6">
+  <li>
+    Attendees will receive a discounted flat rate of{" "}
+    <b>$14.00</b> for self-parking and <b>$28.00</b> for valet parking.
+  </li>
+  <li>
+    Visit the UCEA registration desk to receive a parking label to place on the
+    parking tickets of attendees who are not staying at the hotel.
+  </li>
+</ul>
+
         </SectionContent>
       </SectionWrapper>
 
@@ -329,6 +349,7 @@ export default function HotelTravelPage() {
                   <b className="text-blue-700">UOBUOBA</b> in the Special Rates
                   section when booking online or by phone.
                 </li>
+                
               </>
             }
           />

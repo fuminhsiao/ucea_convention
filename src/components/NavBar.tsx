@@ -41,12 +41,15 @@ const navStructure = [
       { label: "Registration", href: "/attendee-info/registration" },
       { label: "Schedule at a Glance", href: "/attendee-info/schedule" },
       { label: "Program", href: "/attendee-info/program" },
+      { label: "Mobile App", href: "/attendee-info/mobile-app" },
       {
         label: "INTL Graduate Students",
         href: "/attendee-info/international-attendee",
       },
       { label: "Presenter Tips", href: "/attendee-info/presenter-tips" },
       { label: "Facilitator Tips", href: "/attendee-info/facilitator-tips" },
+            { label: "Puerto Rico Tours", href: "/attendee-info/puerto-rico-tours" },
+
     ],
   },
   {

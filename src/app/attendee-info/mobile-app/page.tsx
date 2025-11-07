@@ -18,40 +18,59 @@ export default function MobileAppPage() {
           </p>
 
           <p className="mb-6">
-            Download the Whova app if you don’t already have it on your mobile device.
+            Download the Whova app if you don’t already have it on your mobile
+            device.
           </p>
 
           <h3 className="font-semibold text-xl mb-2">Features</h3>
           <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>View the event agenda and plan your personal schedule</li>
-            <li>Access documents and slides shared by organizers or speakers</li>
-            <li>Find who else is attending and connect with others ahead of time</li>
-            <li>Plan social activities such as runs, coffee meetups, or networking events</li>
-            <li>Post or explore job openings</li>
-            <li>Receive event updates such as last-minute session changes</li>
+            <li>
+              View the event <strong>agenda</strong> and plan your personal
+              schedule
+            </li>
+            <li>
+              Access <strong>documents</strong> and <strong>slides</strong>
+              shared by organizers or speakers
+            </li>
+            <li>
+              <strong>Find who else is attending</strong> and connect with
+              others ahead of time
+            </li>
+            <li>
+              Plan some social activities such as a <strong>morning
+              run, coffee hours, or meet-ups</strong> with your fellow attendees. You can
+              even <strong>post job openings</strong>.
+            </li>
+            <li>
+              Receive updates such as <strong>last minute session changes</strong> from the
+              organizers
+            </li>
           </ul>
 
           <p className="mb-6">
-            After downloading the Whova mobile app or accessing the event via the web portal,
-            use your email address to sign up for a Whova account.
+            After downloading the Whova mobile app or accessing the event via
+            the web portal, use your email address to sign up for a Whova
+            account.
           </p>
 
           <p className="mb-4">
-            To protect user data, Whova requires two-factor authentication at sign-in.
-            After entering your email and password, a verification code will be sent to your email.
-            Check both your inbox and spam folder for the code.
+            To protect user data, Whova requires two-factor authentication at
+            sign-in. After entering your email and password, a <strong>verification code</strong>
+            will be sent to your email. Check both your <strong>inbox and spam folder</strong>
+            for the code.
           </p>
 
           <p className="mb-6">
             Detailed instructions can be found{" "}
-            <a 
-              className="text-blue-600 underline" 
+            <a
+              className="text-blue-600 underline"
               href="https://whova.zendesk.com/hc/en-us/articles/23878656966427-If-I-didn-t-receive-my-verification-code-to-access-the-app-what-should-I-do"
               target="_blank"
               rel="noopener noreferrer"
             >
               here
-            </a>.
+            </a>
+            .
           </p>
 
           <p className="mb-2 font-semibold">Access the web app version:</p>

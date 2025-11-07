@@ -29,21 +29,20 @@ export default function MobileAppPage() {
               schedule
             </li>
             <li>
-              Access <strong>documents</strong> and <strong>slides</strong>
-              shared by organizers or speakers
+              Access <strong>documents</strong> and <strong>slides</strong> shared by organizers or speakers
             </li>
             <li>
               <strong>Find who else is attending</strong> and connect with
               others ahead of time
             </li>
             <li>
-              Plan some social activities such as a <strong>morning
-              run, coffee hours, or meet-ups</strong> with your fellow attendees. You can
-              even <strong>post job openings</strong>.
+              Plan some social activities such as a{" "}
+              <strong>morning run, coffee hours, or meet-ups</strong> with your
+              fellow attendees. You can even <strong>post job openings</strong>.
             </li>
             <li>
-              Receive updates such as <strong>last minute session changes</strong> from the
-              organizers
+              Receive updates such as{" "}
+              <strong>last minute session changes</strong> from the organizers
             </li>
           </ul>
 
@@ -55,9 +54,9 @@ export default function MobileAppPage() {
 
           <p className="mb-4">
             To protect user data, Whova requires two-factor authentication at
-            sign-in. After entering your email and password, a <strong>verification code</strong>
-            will be sent to your email. Check both your <strong>inbox and spam folder</strong>
-            for the code.
+            sign-in. After entering your email and password, a{" "}
+            <strong>verification code</strong> will be sent to your email. Check both your{" "}
+            <strong>inbox and spam folder</strong> for the code.
           </p>
 
           <p className="mb-6">

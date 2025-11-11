@@ -5,7 +5,7 @@ import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 
-const pdfUrl = "https://www.ucea.org/docs/UCEA_2025_ProgramWebNov6.pdf";
+const pdfUrl = "https://www.ucea.org/docs/UCEA_2025_ProgramWebNov10.pdf";
 
 const ProgramPage = () => {
   return (

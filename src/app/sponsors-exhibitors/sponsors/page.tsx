@@ -39,7 +39,7 @@ const sponsors2025: SponsorTier[] = [
     sponsors: [
       {
         name: "University of Georgia",
-        details: "Endowed Chair Dr. Morrill M. Hall",
+        details: "The Dr. Morrill M. Hall Endowed Chair for Educational Administration",
         img: "https://ucea.org/photos/UCEA1759933731_UGAlogo_Vertical_FC_MARCM_copy.jpg",
       },
     ],

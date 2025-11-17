@@ -6,7 +6,7 @@ import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 import SessionBlock from "@/components/ui/general/SessionBlock";
 
-const pdfUrl1 = "https://www.ucea.org/docs/OpeningResilience_combined102325.pdf";
+const pdfUrl1 = "https://www.ucea.org/docs/OpeningResilience_combined111425.pdf";
 const pdfUrl2 = "https://www.ucea.org/docs/GeneralSessionII_Oct23a.pdf";
 
 export default function GeneralSessionsPage() {

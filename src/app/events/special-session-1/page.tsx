@@ -107,7 +107,9 @@ export default function CapacityBuildingSchedule() {
   return (
     <div className="w-full">
       <PageHeader />
-      <PageTitle title="Capacity-Building for Communication & Engagement" />
+      <PageTitle title="Developing the Communication and 
+Engagement-Oriented Capacities of 
+the UCEA Community " />
 
       {/* Intro + PDF */}
       <SectionWrapper>

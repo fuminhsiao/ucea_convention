@@ -5,7 +5,7 @@ import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionContent from "@/components/ui/general/SectionContent";
 
-const pdfUrl = "https://www.ucea.org/docs/WallaceHalfPage111325.pdf";
+const pdfUrl = "https://www.ucea.org/docs/WallaceWeb111625.pdf";
 const downloadText = "📄 Download Full PDF";
 
 // --- Session Info ---

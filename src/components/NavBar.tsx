@@ -77,6 +77,10 @@ const navStructure = [
         label: "Get to Know Program Centers",
         href: "/events/special-session-4",
       },
+       {
+        label: "International Summit",
+        href: "/events/international-summit",
+      },
     ],
   },
   {

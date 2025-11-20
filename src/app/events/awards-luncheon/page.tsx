@@ -41,9 +41,10 @@ export default function AwardsLuncheonPage() {
             </a>
             .
           </p>
+          <p  className="text-lg md:text-2xl text-blue mb-6">Online sales are closed</p>
 
           {/* Purchase Ticket Button */}
-          <div className="mt-10">
+          <div className="mt-10 hidden">
             <a
               href="https://members.ucea.org/members/evr/reg_main.php?orgcode=UCEA&evid=58961179"
               target="_blank"

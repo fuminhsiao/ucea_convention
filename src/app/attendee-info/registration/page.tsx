@@ -38,7 +38,7 @@ export default function RegistrationPage() {
               href="https://members.ucea.org/members/evr/reg_event.php?orgcode=UCEA&evid=55440597"
               target="_blank"
               rel="noopener noreferrer"
-               className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
+               className="hidden border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
             >
               Register for UCEA25
             </a>

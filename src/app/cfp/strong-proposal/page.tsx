@@ -1,6 +1,6 @@
 "use client";
 
-import PageHeader from "@/components/ui/general/PageHeader";
+import PageHeader from "@/components/ui/general/PageHeader2026";
 import PageTitle from "@/components/ui/general/PageTitle";
 import SectionWrapper from "@/components/ui/general/SectionWrapper";
 import SectionTitle from "@/components/ui/general/SectionTitle";

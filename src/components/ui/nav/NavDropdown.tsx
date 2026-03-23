@@ -31,8 +31,11 @@ export default function NavDropdown({
       >
         <motion.button
           whileHover={{ scale: 1.05 }}
-          className={`text-white flex pb-3 items-center gap-1 transition-all cursor-pointer duration-500 ease-in-out ${scrolled ? "text-sm" : "text-base"
-            }`}
+          className={`flex pb-3 items-center gap-1 transition-all cursor-pointer duration-500 ease-in-out ${
+  scrolled
+    ? "text-white text-sm"
+    : "text-white text-base [text-shadow:_0_0_3px_rgba(0,0,0,1)]"
+}`}
         >
           {label}
           <FontAwesomeIcon icon={faCaretDown} className="w-3 h-3 mt-0.5" />

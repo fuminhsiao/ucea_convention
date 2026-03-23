@@ -2,17 +2,33 @@
 
 import { useEffect, useState } from "react";
 
-const Countdown = () => {
-  const [timeLeft, setTimeLeft] = useState<null | {
-    days: number;
-    hours: number;
-    minutes: number;
-    seconds: number;
-  }>(null);
+interface CountdownProps {
+  targetDate: string;
+  title?: string;
+  videoSrc?: string | null;
+  showRegister?: boolean;
+}
 
-  const calculateTimeLeft = () => {
-    const difference = +new Date("2025-11-19T00:00:00") - +new Date();
-    if (difference <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+type TimeLeft = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
+const Countdown = ({
+  targetDate,
+  title = "CONVENTION\nSTARTS IN",
+  videoSrc = "/videos/ocean.mp4",
+}: CountdownProps) => {
+  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
+
+  const calculateTimeLeft = (): TimeLeft => {
+    const difference = +new Date(targetDate) - +new Date();
+
+    if (difference <= 0) {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
 
     return {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -23,7 +39,6 @@ const Countdown = () => {
   };
 
   useEffect(() => {
-    // 初始化
     setTimeLeft(calculateTimeLeft());
 
     const timer = setInterval(() => {
@@ -31,7 +46,7 @@ const Countdown = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [targetDate]);
 
   const timeUnits = timeLeft
     ? [
@@ -44,32 +59,40 @@ const Countdown = () => {
 
   return (
     <section className="relative w-full py-10 md:h-[26rem] overflow-hidden">
-      {/* Background Video */}
-      <video
-        src="/videos/ocean.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute bottom-0 left-0 w-full object-cover z-0"
-      />
+      
+      {/* 🎥 VIDEO（有才顯示） */}
+      {videoSrc && (
+        <video
+          src={videoSrc}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute bottom-0 left-0 w-full h-full object-cover z-0"
+        />
+      )}
 
-      {/* Gradient Overlay */}
+      {/* 🎨 沒影片用底色 */}
+      {!videoSrc && (
+        <div className="absolute inset-0 bg-[#000000] z-0" />
+      )}
+
+      {/* 🎯 正確的漸層（重點） */}
       <div
         className="absolute inset-0 z-10"
         style={{
-          background: "linear-gradient(to bottom, #003366 0%, #ffffff 100%)",
-          opacity: 0.5,
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.65) 40%, rgba(255,255,255,0.25) 100%)",
         }}
       />
 
-      {/* Foreground */}
-      <div className="xl:w-[60%] mx-auto relative z-20 h-full flex flex-col md:flex-row items-center justify-around md:justify-between ">
-        <h2 className="text-white text-2xl md:text-2xl lg:text-3xl font-bold font-sans mb-4 md:mb-0">
-          CONVENTION <br /> STARTS IN
+      {/* 🔥 內容 */}
+      <div className="xl:w-[60%] mx-auto relative z-20 h-full flex flex-col md:flex-row items-center justify-around md:justify-between">
+        
+        <h2 className="text-white text-2xl md:text-2xl lg:text-3xl font-bold font-sans mb-4 md:mb-0 whitespace-pre-line">
+          {title}
         </h2>
 
-        {/* Countdown */}
         <div className="flex space-x-6 text-white">
           {timeUnits.map((unit, index) => (
             <div key={index} className="text-center">
@@ -82,6 +105,7 @@ const Countdown = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

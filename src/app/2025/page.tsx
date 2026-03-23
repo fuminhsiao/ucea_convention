@@ -13,7 +13,7 @@ export default function Home() {
     <main >
 
       <Hero />
-      <Countdown />
+      <Countdown  targetDate="2025-11-17T00:00:00"/>
       <KeyInfoSection />
       
       <InfoSection

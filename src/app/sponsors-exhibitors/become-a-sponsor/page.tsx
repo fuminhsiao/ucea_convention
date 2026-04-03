@@ -40,7 +40,7 @@ export default function SponsorshipPage() {
           </div>
           <div className="mt-6"> <a
             target="_blank"
-            href="#"
+            href="https://www.ucea.org/docs/2026_UCEA_Convention_Sponsorship_Prospectus_Mar24web.pdf"
               className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
           >
             Sponsor Prospectus
@@ -50,146 +50,267 @@ export default function SponsorshipPage() {
       </SectionWrapper>
 
       <SectionWrapper>
-        <SectionTitle>
-          General/Non-Restricted Sponsorship Opportunities
-        </SectionTitle>
-        <SectionContent>
-          <p>(Funds can be used as needed by UCEA)</p>
-          <ul className="list-disc pl-6 mt-2">
-            <li>Platinum Sponsor – $10,000 & up</li>
-            <li>Gold Sponsor – $5,000–$9,999</li>
-            <li>Silver Sponsor – $2,500–$4,999</li>
-            <li>Bronze Sponsor – $1,000–$2,499</li>
-          </ul>
-        </SectionContent>
-      </SectionWrapper>
+  <SectionTitle>SPONSORSHIP OPPORTUNITIES</SectionTitle>
+  <SectionContent>
+    <p className="mb-6 text-lg leading-8">
+      We are excited to offer four levels of sponsorship opportunities tailored
+      to meet your interests. Benefits for each level are shown on the chart
+      below. <em>Eligible for UCEA Member Early Bird Discount through June 30, 2026.</em>
+    </p>
 
-      <SectionWrapper>
-        <SectionTitle>
-          Individual/Targeted Sponsorship Opportunities
-        </SectionTitle>
-        <SectionContent>
-          <p>
-            (Funds are directed to specific programs. Individual opportunities
-            may be combined to reach General Sponsorship benefit levels.)
-          </p>
-          <ul className="list-disc pl-6 mt-2">
-            <li>Social Events/Receptions</li>
-            <li>Jackson Scholars Network</li>
-            <li>Graduate Students</li>
-            <li>Graduate Student Summit</li>
-            <li>Keynote Speakers</li>
-            <li>Special Events</li>
-            <li>Mobile App</li>
-            <li>Program Ads</li>
-            <li>Branding on Promotional Item</li>
-          </ul>
-        </SectionContent>
-      </SectionWrapper>
+    <div className="mb-8 space-y-2 text-lg leading-8">
+      <p>
+        <strong>Platinum Level:</strong> $10,000{" "}
+        <span className="text-gray-700">
+          (Early Bird Rate: $8,000 until 6/30/26)
+        </span>
+      </p>
+      <p>
+        <strong>Gold Level:</strong> $7,500{" "}
+        <span className="text-gray-700">
+          (Early Bird Rate: $6,000 until 6/30/26)
+        </span>
+      </p>
+      <p>
+        <strong>Silver Level:</strong> $5,000{" "}
+        <span className="text-gray-700">
+          (Early Bird Rate: $4,000 until 6/30/26)
+        </span>
+      </p>
+      <p>
+        <strong>Bronze Level:</strong> $2,500{" "}
+        <span className="text-gray-700">
+          (Early Bird Rate: $2,000 until 6/30/26)
+        </span>
+      </p>
+    </div>
 
-      <SectionWrapper>
-        <SectionTitle>Sponsor Benefits</SectionTitle>
-        <SectionContent>
-          <div className="overflow-x-auto">
-            <table className="min-w-full border text-sm text-left">
-              <thead className="bg-gray-100">
-                <tr>
-                  <th className="border px-4 py-2">Benefit Area</th>
-                  <th className="border px-4 py-2">Platinum Sponsor</th>
-                  <th className="border px-4 py-2">Gold Sponsor</th>
-                  <th className="border px-4 py-2">Silver Sponsor</th>
-                  <th className="border px-4 py-2">Bronze Sponsor</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border px-4 py-2 font-semibold">Events</td>
-                  <td className="border px-4 py-2">
-                    <ul className="list-disc pl-4">
-                      <li>Four complimentary annual banquet tickets</li>
-                      <li>Four complimentary awards luncheon tickets</li>
-                      <li>Two complimentary faculty registrations</li>
-                      <li>
-                        One complimentary table in the exhibit area for
-                        displaying materials
-                      </li>
-                    </ul>
-                  </td>
-                  <td className="border px-4 py-2">
-                    <ul className="list-disc pl-4">
-                      <li>Two complimentary annual banquet tickets</li>
-                      <li>
-                        One complimentary full-page ad in the convention program
-                        (Deadline: Oct 1)
-                      </li>
-                    </ul>
-                  </td>
-                  <td className="border px-4 py-2">NA</td>
-                  <td className="border px-4 py-2">NA</td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2 font-semibold">
-                    Recognitions
-                  </td>
-                  <td className="border px-4 py-2">
-                    <ul className="list-disc pl-4">
-                      <li>
-                        One complimentary full-page ad in the convention program
-                        (Deadline: Oct 1)
-                      </li>
-                      <li>
-                        At the Opening Session and all General Sessions (oral
-                        and on session slides)
-                      </li>
-                      <li>Banner ad on the convention mobile app</li>
-                      <li>On UCEA social media platforms</li>
-                      <li>On the sponsor page in the convention program</li>
-                      <li>In the UCEA Review (post-convention)</li>
-                      <li>On signage at registration</li>
-                      <li>On the UCEA website (by sponsorship level)</li>
-                    </ul>
-                  </td>
-                  <td className="border px-4 py-2">
-                    <ul className="list-disc pl-4">
-                      <li>
-                        At the Opening Session and all General Sessions (oral
-                        and on session slides)
-                      </li>
-                      <li>Banner ad on the convention mobile app</li>
-                      <li>On UCEA social media platforms</li>
-                      <li>On the sponsor page in the convention program</li>
-                      <li>In the UCEA Review (post-convention)</li>
-                      <li>On signage at registration</li>
-                      <li>On the UCEA website (by sponsorship level)</li>
-                      <li>At the UCEA slideshow during general sessions</li>
-                    </ul>
-                  </td>
-                  <td className="border px-4 py-2">
-                    <ul className="list-disc pl-4">
-                      <li>Banner ad on the convention mobile app</li>
-                      <li>On UCEA social media platforms</li>
-                      <li>On the sponsor page in the convention program</li>
-                      <li>In the UCEA Review (post-convention)</li>
-                      <li>On signage at registration</li>
-                      <li>On the UCEA website (by sponsorship level)</li>
-                      <li>At the UCEA slideshow during general sessions</li>
-                    </ul>
-                  </td>
-                  <td className="border px-4 py-2">
-                    <ul className="list-disc pl-4">
-                      <li>On the sponsor page in the convention program</li>
-                      <li>In the UCEA Review (post-convention)</li>
-                      <li>On signage at registration</li>
-                      <li>On the UCEA website (by sponsorship level)</li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+    <div className="overflow-x-auto">
+      <table className="min-w-full border border-gray-700 text-left text-base">
+        <thead>
+          <tr className="bg-gray-100">
+            <th className="border border-gray-700 px-4 py-3 font-semibold">
+              Benefits
+            </th>
+            <th className="border border-gray-700 px-4 py-3 text-center font-semibold bg-gray-200">
+              Platinum
+            </th>
+            <th className="border border-gray-700 px-4 py-3 text-center font-semibold bg-yellow-200">
+              Gold
+            </th>
+            <th className="border border-gray-700 px-4 py-3 text-center font-semibold bg-blue-100">
+              Silver
+            </th>
+            <th className="border border-gray-700 px-4 py-3 text-center font-semibold bg-yellow-700 text-white">
+              Bronze
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              One complimentary faculty registration
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
 
-          </div>
-        </SectionContent>
-      </SectionWrapper>
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Three complimentary graduate student registrations
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Two complimentary graduate student registrations
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              One complimentary graduate student registration
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700 text-xl text-white">✓</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Four complimentary awards luncheon tickets
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Two complimentary awards luncheon tickets
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              One complimentary awards luncheon ticket
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Four complimentary banquet tickets
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Two complimentary banquet tickets
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Complimentary exhibitor table to display your organization’s marketing materials
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Advertisement in one issue of the <em>UCEA Spotlight</em> (our monthly digital newsletter with 10K+ subscribers)
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              One complimentary full page in the digital Convention program for advertising space
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Spoken recognition at the opening general session
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100"></td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Banner ad on the Convention mobile app (388K+ sponsor impressions)
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Recognition on our social media platforms (8K+ followers)
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700"></td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Recognition on the sponsor page in the digital Convention program
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700 text-xl text-white">✓</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Recognition in the <em>UCEA Review</em> magazine (post-Convention)
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700 text-xl text-white">✓</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Recognition on the UCEA slideshow playing during general sessions
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700 text-xl text-white">✓</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Recognition on signage at registration
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700 text-xl text-white">✓</td>
+          </tr>
+
+          <tr>
+            <td className="border border-gray-700 px-4 py-3">
+              Recognition on our website listed by sponsorship level
+            </td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-gray-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-200 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-blue-100 text-xl">✓</td>
+            <td className="border border-gray-700 px-4 py-3 text-center bg-yellow-700 text-xl text-white">✓</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </SectionContent>
+</SectionWrapper>
       <SectionWrapper>
         <SectionTitle>Terms and Conditions</SectionTitle>
         <SectionContent>

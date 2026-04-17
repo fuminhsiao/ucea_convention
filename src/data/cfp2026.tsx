@@ -98,6 +98,8 @@ export const CFP_2026: CFPData = {
           <ul className="list-disc pl-6 space-y-2">
             <li>All Academic opens: March 9, 2026</li>
             <li>Proposal Submission Deadline: May 3, 2026, 11:59 p.m. (EST)</li>
+            <li>Proposal Reviews Deadline: May 27, 2026, 11:59 p.m. (EST) (EST)</li>
+
             <li>Notification of Acceptance: June 22, 2026</li>
             <li>Early-Bird Registration Deadline: September 18, 2026</li>
             <li>Registration Deadline: October 16, 2026</li>

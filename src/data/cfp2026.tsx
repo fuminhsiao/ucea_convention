@@ -70,7 +70,7 @@ export const CFP_2026: CFPData = {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.ucea.org/docs/UCEA26_Convention_Call_for_ProposalsFull_Feb24.pdf"
+              href="https://www.ucea.org/docs/UCEA26_Convention_Call_for_ProposalsFull_April17.pdf"
               className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
             >
               VIEW PDF

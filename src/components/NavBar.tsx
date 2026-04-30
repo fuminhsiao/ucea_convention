@@ -175,7 +175,7 @@ const navConfig2026: ConventionNavConfig = {
       items: [
         { label: "Dates & Locations", href: "/about/dates-locations" },
         { label: "Planning Committee", href: "/about/planning-committee" },
- 
+        { label: "Convention Logo", href: "/about/convention-logo" },
       ],
     },
     {
@@ -188,7 +188,6 @@ const navConfig2026: ConventionNavConfig = {
           label: "Submission Guidelines",
           href: "/cfp/submission-details",
         },
-        
       ],
     },
     {
@@ -225,7 +224,6 @@ const navConfig2026: ConventionNavConfig = {
           label: "Become a Sponsor",
           href: "/sponsors-exhibitors/become-a-sponsor",
         },
-
       ],
     },
   ],
@@ -236,7 +234,9 @@ const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
+  const [activeMobileDropdown, setActiveMobileDropdown] = useState<
+    string | null
+  >(null);
 
   const isArchive2025 = pathname?.startsWith("/2025");
 
@@ -245,7 +245,9 @@ const NavBar = () => {
   }, [isArchive2025]);
 
   const visibleNavGroups = useMemo(() => {
-    return currentConfig.navStructure.filter((group) => group.visible !== false);
+    return currentConfig.navStructure.filter(
+      (group) => group.visible !== false,
+    );
   }, [currentConfig]);
 
   useEffect(() => {
@@ -315,11 +317,11 @@ const NavBar = () => {
           {currentConfig.showRegisterButton && currentConfig.registerHref && (
             <Link href={currentConfig.registerHref}>
               <button
-  className={`ml-4 px-5 py-2 text-white font-semibold rounded-md border-2 border-white transition cursor-pointer ${
-  scrolled
-    ? ""
-    : "[text-shadow:_0_0_3px_rgba(0,0,0,1)] [box-shadow:_0_0_3px_rgba(0,0,0,1)]"
-}`}
+                className={`ml-4 px-5 py-2 text-white font-semibold rounded-md border-2 border-white transition cursor-pointer ${
+                  scrolled
+                    ? ""
+                    : "[text-shadow:_0_0_3px_rgba(0,0,0,1)] [box-shadow:_0_0_3px_rgba(0,0,0,1)]"
+                }`}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.backgroundColor =
                     currentConfig.registerHoverBg;
@@ -347,11 +349,14 @@ const NavBar = () => {
           >
             <ul className="flex flex-col items-center space-y-6 py-6 uppercase font-semibold text-white">
               {visibleNavGroups.map(({ label, items }) => (
-                <li key={`${currentConfig.mode}-${label}`} className="w-full text-center">
+                <li
+                  key={`${currentConfig.mode}-${label}`}
+                  className="w-full text-center"
+                >
                   <button
                     onClick={() =>
                       setActiveMobileDropdown(
-                        activeMobileDropdown === label ? null : label
+                        activeMobileDropdown === label ? null : label,
                       )
                     }
                     className="w-full flex items-center justify-center gap-2 py-2 text-xl focus:outline-none"
@@ -390,17 +395,18 @@ const NavBar = () => {
                 </li>
               ))}
 
-              {currentConfig.showRegisterButton && currentConfig.registerHref && (
-                <li className="pt-2">
-                  <Link
-                    href={currentConfig.registerHref}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="inline-block px-5 py-2 border-2 border-white rounded-md text-white"
-                  >
-                    REGISTER
-                  </Link>
-                </li>
-              )}
+              {currentConfig.showRegisterButton &&
+                currentConfig.registerHref && (
+                  <li className="pt-2">
+                    <Link
+                      href={currentConfig.registerHref}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="inline-block px-5 py-2 border-2 border-white rounded-md text-white"
+                    >
+                      REGISTER
+                    </Link>
+                  </li>
+                )}
             </ul>
           </motion.div>
         )}

@@ -75,7 +75,7 @@ export default function CFP2026SubmissionDetailsPage() {
         <SectionTitle>PROPOSAL SUBMISSION DEADLINE</SectionTitle>
         <SectionContent>
           Proposals must be received by{" "}
-          <strong>Sunday, May 3, 2026, 11:59 p.m. EST</strong>. All proposals
+          <strong>May 11, 2026, 11:59 p.m. EST</strong>. All proposals
           must be submitted electronically at the link on the UCEA website.
         </SectionContent>
       </SectionWrapper>
@@ -85,7 +85,7 @@ export default function CFP2026SubmissionDetailsPage() {
         <SectionContent>
           <ul className="list-disc pl-6 space-y-2">
             <li>All Academic opens: March 9, 2026</li>
-            <li>Proposal Submission Deadline: May 3, 2026, 11:59 p.m. (EST)</li>
+            <li>Proposal Submission Deadline: May 11, 2026, 11:59 p.m. (EST)</li>
             <li>Notification of Acceptance: June 22, 2026</li>
             <li>Early-Bird Registration Deadline: September 18, 2026</li>
             <li>Registration Deadline: October 16, 2026</li>

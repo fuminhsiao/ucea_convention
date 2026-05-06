@@ -70,7 +70,7 @@ export const CFP_2026: CFPData = {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.ucea.org/docs/UCEA26_Convention_Call_for_ProposalsFull_April17.pdf"
+              href="https://www.ucea.org/docs/UCEA26_GSS_Call_for_Proposals_April28.pdf"
               className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
             >
               VIEW PDF
@@ -97,7 +97,7 @@ export const CFP_2026: CFPData = {
         <>
           <ul className="list-disc pl-6 space-y-2">
             <li>All Academic opens: March 9, 2026</li>
-            <li>Proposal Submission Deadline: May 3, 2026, 11:59 p.m. (EST)</li>
+            <li>Proposal Submission Deadline: May 11, 2026, 11:59 p.m. (EST)</li>
             <li>Proposal Reviews Deadline: May 27, 2026, 11:59 p.m. (EST) (EST)</li>
 
             <li>Notification of Acceptance: June 22, 2026</li>

@@ -31,7 +31,7 @@ export const CFP_2026: CFPData = {
       content: (
         <>
           <p className="text-[#b91c1c] font-semibold mb-4">
-            Proposals must be received by Sunday, May 11th, 2026. All proposals
+            Proposals must be received by Monday, May 11th, 2026. All proposals
             must be submitted electronically through All Academic. This site
             will officially open March 9, 2026.
           </p>

@@ -187,7 +187,10 @@ const navConfig2026: ConventionNavConfig = {
         {
           label: "Submission Guidelines",
           href: "/cfp/submission-details",
+
         },
+                { label: "Proposal Reviews", href: "/cfp/proposal-reviews" },
+
       ],
     },
     {

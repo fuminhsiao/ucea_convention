@@ -51,7 +51,7 @@ export default function ProposalReviewPage() {
             </li>
             <li>
               <Link
-                href="https://www.ucea.org/docs/ReviewerCriteria.pdf"
+                href="https://www.ucea.org/docs/ReviewerCriteria0514.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#004a78] underline hover:text-[#0067a3] transition"

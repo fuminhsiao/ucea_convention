@@ -40,7 +40,7 @@ export default function SponsorshipPage() {
           </div>
           <div className="mt-6"> <a
             target="_blank"
-            href="https://www.ucea.org/docs/2026_UCEA_Convention_Sponsorship_Prospectus_Mar24web.pdf"
+            href="https://www.ucea.org/docs/2026_UCEA_Convention_Sponsorship_Prospectus_May20web.pdf"
               className="border border-blue-600 text-blue-600 px-4 py-2 text-xl font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
           >
             Sponsor Prospectus

@@ -198,7 +198,7 @@ const navConfig2026: ConventionNavConfig = {
       visible: true,
       items: [
         { label: "Hotel & Travel", href: "/attendee-info/hotel" },
-       // { label: "Registration", href: "/attendee-info/registration" },
+       { label: "Registration", href: "/attendee-info/registration" },
        //{ label: "Program", href: "/attendee-info/program" },
        //{ label: "Schedule at a Glance", href: "/attendee-info/schedule" },
         //{ label: "Mobile App", href: "/attendee-info/mobile-app" },

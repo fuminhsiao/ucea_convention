@@ -161,7 +161,7 @@ const navConfig2025: ConventionNavConfig = {
 const navConfig2026: ConventionNavConfig = {
   mode: "current2026",
   homeHref: "/",
-  registerHref: "#",
+  registerHref: "/attendee-info/registration",
   showRegisterButton: true,
   desktopScrolledBg:
     "linear-gradient(to bottom, #505050, rgba(90, 20, 49, 0.02))",

@@ -21,32 +21,26 @@ export default function RegistrationPage() {
           <br />
 
           <p>
-            Register by clicking on the <b>Member Login</b> button in the{" "}
-            <a
-              href="https://www.ucea.org/"
-              target="_blank"
-              className="text-blue-700 underline"
-            >
-              ucea homepage
-            </a>{" "}
-            upper right corner or direct{" "}
-            <a
-              target="_blank"
-              className="text-blue-700 underline"
-              href="https://www.viethconsulting.com/members/mlogin.php?org_id=UCEA"
-            >
-              Member Login Link Here
-            </a>
-            . If you are unable to log in to your member profile page, please email
-            <a
-              href="mailto:info@ucea.org"
-              className="text-blue-700 underline"
-            >
-              {" "}
-              info@ucea.org
-            </a>
-            .
-          </p>
+  Click the button below to register for the 2026 UCEA Annual Convention. If you experience any issues with registration, please email{" "}
+  <a
+    href="mailto:info@ucea.org"
+    className="text-blue-700 underline"
+  >
+    info@ucea.org
+  </a>
+  .
+</p>
+
+<div className="flex justify-center mt-6">
+  <a
+    href="https://members.ucea.org/members/evr/reg_event.php?orgcode=UCEA&evid=65325355"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-[#003865] hover:bg-[#00284a] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
+  >
+    Register for UCEA 2026
+  </a>
+</div>
           <br />
 
           <p>All attendees must register for the Convention. This includes the following:</p>
